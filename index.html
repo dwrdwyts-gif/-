@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>יציע | חולצות כדורגל</title>
+<meta name="description" content="יציע: חולצות כדורגל של קבוצות ונבחרות. סינון חכם, הוספה מהירה לסל, קנו 3 והרביעית ב-40 ₪.">
+<meta name="theme-color" content="#FFFFFF">
+<meta property="og:type" content="website"><meta property="og:locale" content="he_IL"><meta property="og:title" content="יציע | חולצות כדורגל"><meta property="og:description" content="קנו 3, הרביעית ב-40 ₪. משלוח עד הבית.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23111'/%3E%3Cpath d='M10 12h20M10 20h14M10 28h8' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--sf:#fff;--ink:#111;--mute:#6F6F73;--red:#C8102E;--onred:#fff;--rule:#E4E4E4;--soft:#F4F4F4;--cy:#111;--hs:Heebo,Arial,sans-serif;--f:Heebo,"Arial Hebrew",Arial,sans-serif;--ch:var(--hs);--hd:#fff;--pit1:#2F8F55;--pit2:#2A8250;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#fff;--sf:#fff;--ink:#111;--mute:#6F6F73;--rule:#E4E4E4;--soft:#F4F4F4;color-scheme:light}}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.55 var(--f);padding-bottom:calc(84px + env(safe-area-inset-bottom,0px));overflow-x:hidden}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--red);outline-offset:2px}
+h1,h2,h3{font-family:var(--hs);font-weight:900;margin:0;line-height:1.08;text-wrap:balance}
+.w{max-width:1000px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.mut{color:var(--mute)}
+.view[hidden]{display:none}
+.kick{font-weight:700;font-size:13px;letter-spacing:.06em;color:var(--red);text-transform:uppercase}
+.rl{border:0;border-top:3px double var(--rule);margin:0}
+.hr1{border:0;border-top:1px solid var(--rule);margin:0}
+.sec{padding-block:22px 6px}
+.sec>h2{font-size:clamp(30px,8vw,42px);border-top:4px solid var(--rule);padding-top:8px;margin-bottom:12px}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:2px solid var(--ink);border-radius:2px;background:var(--ink);color:var(--bg);font-weight:700;font-size:17px;padding:11px 22px;text-decoration:none}
+.btn:active{transform:translateY(1px)}
+.btn.rd{background:var(--red);border-color:var(--red);color:var(--onred)}
+.btn.ol{background:none;color:var(--ink)}
+.btn:disabled{opacity:.4}
+.btn.full{width:100%}
+.pill{flex:none;border:1.5px solid var(--ink);border-radius:2px;background:none;padding:5px 14px;font-weight:600;font-size:15px}
+.pill[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.pills{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:2px 2px 6px}
+.pills::-webkit-scrollbar{display:none}
+
+/* product card */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px 14px}
+@media(min-width:620px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.pc{position:relative;text-align:start;background:none;border:0;padding:0;display:block}
+.pc .im{position:relative;border:1px solid var(--rule);padding:5px;background:var(--sf)}
+.pc img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%}
+.pc b{display:block;font-family:var(--hs);font-weight:900;font-size:18px;line-height:1.1;margin-top:7px}
+.pc small{display:block;color:var(--mute);font-size:14px}
+.pc .p{font-weight:700;color:var(--red);font-size:17px}
+.pc .s{position:absolute;top:10px;inset-inline-end:10px;background:var(--red);color:var(--onred);font-weight:700;font-size:12px;padding:0 7px}
+.pc .a{position:absolute;bottom:10px;inset-inline:10px;display:flex;justify-content:space-between;pointer-events:none}
+.pc .a span{pointer-events:auto;width:34px;height:34px;display:grid;place-items:center;background:var(--bg);border:1px solid var(--rule);font-size:16px;line-height:1}
+.pc .a span[aria-pressed=true]{background:var(--red);color:var(--onred)}
+.empty{text-align:center;padding:30px 12px;grid-column:1/-1;border:1px dashed var(--rule)}
+.empty b{font-family:var(--hs);font-size:26px;display:block}
+
+
+body{background:#fff;color:var(--ink);font-family:var(--f);font-weight:400;overflow-x:hidden;padding-bottom:calc(20px + env(safe-area-inset-bottom,0px))}
+.view[hidden]{display:none}
+.w{max-width:1100px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.ann{background:#111;color:#fff;font-size:12px;text-align:center;padding:7px 12px;letter-spacing:.02em;font-weight:500}
+.hd{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--rule)}
+.hd .in{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:54px;padding-inline:max(8px,env(safe-area-inset-left,0px))}
+.hd .l,.hd .r{display:flex;align-items:center}.hd .r{justify-content:flex-end}
+.logo{font-weight:800;letter-spacing:.22em;font-size:17px}
+.ib2{position:relative;width:44px;height:44px;border:0;background:none;color:var(--ink);display:grid;place-items:center}.ib2 svg{width:22px;height:22px}
+.cn{position:absolute;top:6px;inset-inline-end:3px;min-width:17px;height:17px;background:var(--ink);color:#fff;border-radius:9px;font-size:10.5px;font-weight:700;display:grid;place-items:center;padding:0 4px}.cn[hidden]{display:none}
+/* hero */
+.hero{position:relative;aspect-ratio:4/5;max-height:78vh;width:100%;overflow:hidden;background:#EDEDED}
+.hero .sl{position:absolute;inset:0;opacity:0;transition:opacity 1s ease}.hero .sl.on{opacity:1}
+.hero img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block;transform:scale(1.04);transition:transform 6s ease-out}.hero .sl.on img{transform:scale(1.12)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.62));pointer-events:none}
+.hero .tx{position:absolute;z-index:2;inset-inline:0;bottom:0;padding:0 max(20px,env(safe-area-inset-left,0px)) 28px;color:#fff}
+.hero .tx small{display:block;font-size:12px;letter-spacing:.2em;font-weight:500;opacity:.9}
+.hero .tx h1{margin:6px 0 14px;font-size:clamp(30px,8.4vw,48px);font-weight:300;letter-spacing:-.02em;line-height:1.05}
+.lnk2{display:inline-block;color:inherit;font-weight:700;font-size:14px;border-bottom:1.5px solid currentColor;padding-bottom:2px;background:none;border-inline:0;border-top:0;font-family:var(--f);letter-spacing:.02em}
+.dots{position:absolute;z-index:3;inset-inline-end:max(20px,env(safe-area-inset-left,0px));bottom:30px;display:flex;gap:6px}.dots i{width:18px;height:2px;background:rgba(255,255,255,.4)}.dots i.on{background:#fff}
+/* quick links */
+.qk{display:flex;gap:22px;overflow-x:auto;padding:18px max(16px,env(safe-area-inset-left,0px));scrollbar-width:none;border-bottom:1px solid var(--rule)}.qk::-webkit-scrollbar{display:none}
+.qk button{flex:none;background:none;border:0;font-family:var(--f);font-size:15px;font-weight:500;color:var(--ink);padding:2px 0;white-space:nowrap;border-bottom:1.5px solid transparent}
+.qk button:active{border-bottom-color:var(--ink)}
+.sh2{display:flex;align-items:baseline;justify-content:space-between;padding:34px max(16px,env(safe-area-inset-left,0px)) 14px}
+.sh2 h2{margin:0;font-size:13px;letter-spacing:.2em;font-weight:800;text-transform:uppercase}.sh2 button{background:none;border:0;font-family:var(--f);font-size:13.5px;font-weight:500;text-decoration:underline;color:var(--ink)}
+/* grid tiles */
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 2px}
+.pgrid.one{grid-template-columns:1fr}
+@media(min-width:700px){.pgrid{grid-template-columns:repeat(4,1fr)}.pgrid.one{grid-template-columns:repeat(2,1fr)}}
+.tile{position:relative;text-align:start}
+.tile .im{position:relative;background:#F2F2F2;aspect-ratio:4/5;overflow:hidden;cursor:pointer}
+.tile img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;transition:transform .5s}
+.tile:active img{transform:scale(1.03)}
+.tile .hh{position:absolute;top:6px;inset-inline-end:6px;width:36px;height:36px;border:0;background:none;display:grid;place-items:center;color:#111}.tile .hh svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.7}.tile .hh[aria-pressed=true] svg{fill:#111}
+.tile .qa{position:absolute;bottom:8px;inset-inline-start:8px;width:34px;height:34px;border-radius:50%;border:0;background:#fff;color:#111;font-size:22px;line-height:1;display:grid;place-items:center;box-shadow:0 1px 6px rgba(0,0,0,.18);font-family:var(--f);font-weight:300}
+.tile .sz{position:absolute;inset-inline:0;bottom:0;background:rgba(255,255,255,.96);padding:10px 8px 10px;transform:translateY(102%);transition:transform .28s cubic-bezier(.2,.8,.2,1);z-index:3}
+.tile.open .sz{transform:none}
+.tile .sz p{margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:.1em;text-align:center}
+.tile .sz div{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.tile .sz button{height:38px;border:1px solid var(--rule);background:#fff;font-family:var(--f);font-size:13px;font-weight:700;color:#111}.tile .sz button:active{background:#111;color:#fff}
+.tile .bd{position:absolute;top:8px;inset-inline-start:8px;background:#fff;font-size:10.5px;font-weight:700;letter-spacing:.06em;padding:2px 7px}
+.tile .mt2{padding:9px 10px 0}.tile .mt2 b{display:block;font-weight:500;font-size:13.5px;line-height:1.3}.tile .mt2 small{display:block;color:var(--mute);font-size:12px;margin-top:1px}.tile .mt2 span{display:block;margin-top:5px;font-size:13.5px;font-weight:700}
+.row{display:flex;gap:2px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.row::-webkit-scrollbar{display:none}.row .tile{flex:0 0 46%;scroll-snap-align:start}
+@media(min-width:700px){.row .tile{flex-basis:23%}}
+/* banners */
+.bn{display:grid;grid-template-columns:1fr 1fr;gap:2px;margin-top:34px;position:relative;background:#EDEDED}
+.bn button{border:0;padding:0;background:none;display:block}.bn img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 20%;display:block}
+.bn .cap{position:absolute;inset-inline:0;bottom:0;padding:34px max(20px,env(safe-area-inset-left,0px)) 20px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.55));pointer-events:none}
+.bn .cap small{display:block;font-size:11.5px;letter-spacing:.2em}.bn .cap b{display:block;font-size:26px;font-weight:300;margin:2px 0 8px}.bn .cap u{font-weight:700;font-size:14px}
+.usp{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:34px max(16px,env(safe-area-inset-left,0px));border-top:1px solid var(--rule);margin-top:40px;text-align:center}
+.usp div b{display:block;font-size:13px;font-weight:700;margin-top:8px}.usp div span{display:block;font-size:12px;color:var(--mute);margin-top:2px;line-height:1.35}.usp svg{width:26px;height:26px;stroke:#111;fill:none;stroke-width:1.5}
+.ft{background:#111;color:#cfcfcf;padding:30px max(20px,env(safe-area-inset-left,0px)) 40px;margin-top:20px;font-size:13px;line-height:1.8}
+.ft b{display:block;color:#fff;letter-spacing:.2em;font-size:15px;margin-bottom:10px}.ft a,.ft button{color:#fff;text-decoration:underline;background:none;border:0;font:inherit;padding:0}
+/* catalog */
+.tbar{position:sticky;top:54px;z-index:40;background:#fff;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:1fr 1fr auto;align-items:stretch}
+.tbar>*{height:48px;border:0;background:#fff;font-family:var(--f);font-size:14px;font-weight:500;color:#111;display:flex;align-items:center;justify-content:center;gap:8px;border-inline-end:1px solid var(--rule)}
+.tbar svg{width:18px;height:18px;stroke:#111;fill:none;stroke-width:1.7}
+.tbar select{appearance:none;-webkit-appearance:none;text-align:center;text-align-last:center;padding:0 12px;border-radius:0}
+.tbar .vw{width:62px;border-inline-end:0}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px max(16px,env(safe-area-inset-left,0px));scrollbar-width:none}.chips::-webkit-scrollbar{display:none}
+.chips button{flex:none;border:1px solid #111;background:#fff;font-family:var(--f);font-size:12.5px;font-weight:500;padding:6px 12px;display:flex;gap:6px;align-items:center}.chips button::after{content:"✕";font-size:10px}
+.cat-h{padding:22px max(16px,env(safe-area-inset-left,0px)) 8px}.cat-h h1{margin:0;font-size:26px;font-weight:300;letter-spacing:-.02em}.cat-h p{margin:2px 0 0;color:var(--mute);font-size:13px}
+.more2{display:block;margin:30px auto;padding:14px 34px;border:1.5px solid #111;background:#fff;font-family:var(--f);font-weight:700;font-size:14px;letter-spacing:.04em}
+.empty{text-align:center;padding:60px 20px;color:var(--mute);grid-column:1/-1}.empty b{display:block;color:#111;font-size:17px;margin-bottom:6px}
+/* sheets */
+.ov{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .25s}.ov.on{opacity:1;pointer-events:auto}
+.fs{position:fixed;z-index:301;inset-inline:0;bottom:0;max-height:88dvh;background:#fff;transform:translateY(102%);transition:transform .32s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;border-radius:16px 16px 0 0;max-width:560px;margin-inline:auto}.fs.on{transform:none}
+.fs header{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border-bottom:1px solid var(--rule)}.fs header b{font-size:13px;letter-spacing:.2em;font-weight:800}.fs header button{background:none;border:0;font-size:22px;line-height:1;color:#111;font-family:var(--f);padding:2px 6px}
+.fs .bd2{overflow-y:auto;padding:4px 20px 16px;-webkit-overflow-scrolling:touch}
+.fs details{border-bottom:1px solid var(--rule)}.fs summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:16px 0;font-weight:700;font-size:14.5px;cursor:pointer}.fs summary::-webkit-details-marker{display:none}.fs summary::after{content:"+";font-size:20px;font-weight:300}.fs details[open] summary::after{content:"−"}
+.fs .opts{padding:0 0 16px;display:grid;gap:2px}
+.fs label{display:flex;align-items:center;gap:12px;padding:9px 0;font-size:14.5px}.fs label small{margin-inline-start:auto;color:var(--mute)}
+.fs input[type=checkbox]{appearance:none;-webkit-appearance:none;width:20px;height:20px;border:1.5px solid #111;margin:0;display:grid;place-items:center;flex:none}.fs input[type=checkbox]:checked{background:#111}.fs input[type=checkbox]:checked::after{content:"";width:9px;height:5px;border:2px solid #fff;border-top:0;border-inline-end:0;transform:rotate(-45deg) translate(1px,-1px)}
+.fs label img{width:24px;height:24px;object-fit:contain}
+.fs .sw{display:flex;flex-wrap:wrap;gap:12px;padding:0 0 16px}.fs .sw button{width:34px;height:34px;border-radius:50%;border:1px solid #bbb;padding:0;position:relative}.fs .sw button[aria-pressed=true]::after{content:"";position:absolute;inset:-5px;border:1.5px solid #111;border-radius:50%}
+.fs footer{display:grid;grid-template-columns:1fr 2fr;gap:10px;padding:14px 20px calc(14px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--rule)}
+.fs footer button{height:50px;font-family:var(--f);font-weight:700;font-size:14.5px;letter-spacing:.03em;border:1.5px solid #111;background:#fff;color:#111}.fs footer .pr2{background:#111;color:#fff}
+/* search */
+.sov{position:fixed;inset:0;z-index:310;background:#fff;display:none;flex-direction:column}.sov.on{display:flex}
+.sov .top{display:flex;align-items:center;gap:6px;padding:calc(8px + env(safe-area-inset-top,0px)) 10px 8px;border-bottom:1px solid var(--rule)}
+.sov input{flex:1;height:44px;border:0;background:#F4F4F4;padding:0 14px;font-family:var(--f);font-size:16px;color:#111;border-radius:0}
+.sov .bd3{flex:1;overflow-y:auto;padding:14px max(16px,env(safe-area-inset-left,0px)) 40px;-webkit-overflow-scrolling:touch}
+.sov h3{margin:16px 0 8px;font-size:12px;letter-spacing:.2em;font-weight:800}
+.sov .tm{display:flex;gap:14px;overflow-x:auto;padding:4px 0 10px;scrollbar-width:none}.sov .tm::-webkit-scrollbar{display:none}.sov .tm button{flex:none;width:68px;background:none;border:0;font-family:var(--f);font-size:11.5px;color:#111;text-align:center}.sov .tm img{width:52px;height:52px;object-fit:contain;display:block;margin:0 auto 4px}
+.sov .rs{display:flex;flex-wrap:wrap;gap:8px}.sov .rs button{border:1px solid var(--rule);background:#fff;padding:7px 14px;font-family:var(--f);font-size:14px;color:#111}
+.toast{position:fixed;inset-inline:16px;bottom:calc(24px + env(safe-area-inset-bottom,0px));z-index:400;max-width:420px;margin-inline:auto;background:#111;color:#fff;padding:13px 16px;font-weight:500;text-align:center;font-size:14px}.toast[hidden]{display:none}
+.fb{display:none}
+.flyc{position:fixed;z-index:99999;pointer-events:none;object-fit:cover}
+.sg2{display:grid;grid-template-columns:repeat(2,1fr);gap:22px 2px}
+.btn{border-radius:0;font-weight:700;letter-spacing:.03em;font-family:var(--f)}.btn.rd,.btn:not(.ol){background:#111;border-color:#111;color:#fff}.btn.ol{background:#fff;border-color:#111;color:#111}
+.pill{border-radius:0;border:1px solid #111;background:#fff;color:#111}.pill[aria-pressed=true]{background:#111;color:#fff}
+.mut{color:var(--mute)}
+/* dialogs */
+dialog{border:3px double var(--rule);padding:0;background:var(--bg);color:var(--ink);width:min(540px,100%);max-width:100%;max-height:94vh;margin:auto auto 0;overflow:auto;border-bottom:0}
+@media(min-width:620px){dialog{margin:auto;border-bottom:3px double var(--rule)}}
+dialog::backdrop{background:rgba(20,16,8,.72)}
+.dx{position:sticky;top:8px;float:inline-end;margin:8px;z-index:5;width:42px;height:42px;border:2px solid var(--ink);border-radius:2px;background:var(--bg);font-size:24px;line-height:1}
+.dp{padding:14px max(18px,env(safe-area-inset-left,0px)) calc(24px + env(safe-area-inset-bottom,0px))}
+.pf{border:1px solid var(--rule);padding:6px;background:var(--sf);margin:52px 0 12px}
+.pf img{width:100%;max-height:44vh;aspect-ratio:1/1;object-fit:cover;object-position:center 25%}
+.s1{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;border-top:3px double var(--rule);padding-top:8px}
+.s1 h3{font-size:36px}.s1 .pri{font-family:var(--hs);font-weight:900;font-size:34px;color:var(--red)}
+.tag{display:inline-block;border:1px solid var(--rule);padding:0 9px;font-weight:600;font-size:14px;margin-inline-end:6px}
+.tag.r{background:var(--red);color:var(--onred);border-color:var(--red)}
+.lab{font-family:var(--hs);font-weight:900;margin:16px 0 8px;display:flex;justify-content:space-between;align-items:baseline;font-size:20px}
+.lab button{background:none;border:0;text-decoration:underline;font-family:var(--f);font-weight:600;font-size:14px;color:var(--mute);padding:0}
+.seg{display:grid;grid-template-columns:1fr 1fr;border:1.5px solid var(--ink);margin-bottom:10px}
+.seg button{border:0;background:none;padding:8px;font-weight:700}
+.seg button[aria-pressed=true]{background:var(--ink);color:var(--bg)}
+.szs{display:flex;flex-wrap:wrap;gap:8px}
+.szs button{min-width:56px;padding:10px 6px;border:1.5px solid var(--ink);border-radius:2px;background:var(--sf);font-weight:700;font-size:17px}
+.szs button[aria-pressed=true]{background:var(--red);color:var(--onred);border-color:var(--red)}
+.szs.bad{outline:3px solid var(--red);outline-offset:4px}
+.chk{display:flex;align-items:center;gap:10px;font-weight:600;margin-top:14px}
+.chk input{width:24px;height:24px;accent-color:var(--red)}
+.pnb{display:grid;gap:10px;margin-top:10px}.pnb[hidden]{display:none}
+.pnb .f{display:grid;grid-template-columns:2fr 1fr;gap:8px}
+.bk{background:#14172b;color:#fff;text-align:center;padding:12px 10px;direction:ltr;border:2px solid var(--ink)}
+.bk small{display:block;letter-spacing:3px;font-weight:700;font-size:17px;min-height:22px;text-transform:uppercase}
+.bk b{display:block;font-size:64px;line-height:1;font-weight:900}
+.eta{border:1px dashed var(--rule);padding:8px 12px;font-weight:600;font-size:15px;margin-top:14px}
+.shr{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+.pgb{display:flex;gap:6px;margin:12px 0 6px}
+.pgb i{flex:1;height:10px;border:1.5px solid var(--ink)}
+.pgb i.on{background:var(--ink)}.pgb i.fr{background:var(--red);border-color:var(--red)}
+.hint{font-weight:700;margin:0 0 10px}
+.it{display:grid;grid-template-columns:60px 1fr auto;gap:12px;align-items:start;padding:12px 0;border-bottom:1px solid var(--rule)}
+.it img{width:60px;height:76px;object-fit:cover;object-position:center 25%;border:1px solid var(--rule)}
+.it .n{font-family:var(--hs);font-weight:900;font-size:17px;line-height:1.15}
+.it small{display:block;color:var(--mute);font-size:14px}
+.it select{margin-top:6px;padding:5px 8px;font-size:14px;width:auto}
+.it .ac{display:flex;flex-direction:column;align-items:flex-end;gap:6px;font-weight:700}
+.it .ac button{border:1px solid var(--ink);border-radius:2px;background:none;font-size:13px;font-weight:600;padding:2px 10px}
+.tot{display:flex;justify-content:space-between;align-items:baseline;border-top:3px double var(--rule);margin-top:8px;padding-top:10px}
+.tot b{font-family:var(--hs);font-size:44px;font-weight:900;line-height:1}
+.dsc{color:var(--red);font-weight:700;text-align:end;margin-top:6px}
+.warn{border:1px solid var(--rule);padding:8px 12px;font-size:15px;margin:12px 0}
+.ff{display:grid;gap:10px;margin:12px 0}
+.ff label,.fi label,.rf label{display:grid;gap:4px;font-weight:600;font-size:14px}
+.lnk{background:none;border:0;text-decoration:underline;font-weight:600;padding:10px;display:block;margin:4px auto 0;color:var(--mute)}
+.fin .bigs{font-family:var(--hs);font-size:72px;font-weight:900;line-height:1;text-align:center;margin:10px 0;color:var(--red)}
+.mo button.ml,.mo a{display:flex;justify-content:space-between;align-items:center;width:100%;text-align:start;text-decoration:none;font-family:var(--hs);font-weight:900;font-size:22px;padding:13px 2px;background:none;border:0;border-bottom:1px solid var(--rule)}
+.tw{overflow-x:auto;border:1px solid var(--rule);margin-bottom:14px}
+table{border-collapse:collapse;width:100%;min-width:420px;font-size:15px}
+th,td{padding:8px 12px;text-align:start;border-bottom:1px solid var(--rule)}
+th{background:var(--ink);color:var(--bg);font-weight:700}
+tr:last-child td{border-bottom:0}
+.chart{width:100%;border:1px solid var(--rule);margin:8px 0;background:#fff}
+.rv{padding:12px 0;border-bottom:1px solid var(--rule)}
+.rv .stt,.avg .stt{color:#E0A100;letter-spacing:2px}
+.rv p{margin:6px 0 0}.rv img{margin-top:8px;max-width:220px;border:1px solid var(--rule)}
+.avg{font-size:20px;font-weight:700;margin-bottom:8px}
+.rf{padding:14px 0;display:grid;gap:10px}
+.stars{display:flex;direction:ltr;justify-content:flex-end}
+.stars button{background:none;border:0;font-size:36px;line-height:1;color:var(--soft);padding:2px 4px}
+.stars button.on{color:#E0A100}
+.cmpt{width:100%;min-width:0}
+.cmpt td,.cmpt th{vertical-align:top}
+.cmpt img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 25%;border:1px solid var(--rule)}
+.ft{border-top:3px double var(--rule);margin-top:30px;padding-block:18px;font-size:14px;color:var(--mute);line-height:1.7}
+
+dialog{border:0;border-radius:0;background:#fff;color:#111}
+@media(min-width:620px){dialog{border-radius:0}}
+.s1 h3,.s1 .pri,.tot b,.bigs,.lab,.it .n{font-family:var(--f);font-weight:800}
+.pf,.eta,.warn,.szs button,.dx,.tw,.chart,.it img{border-radius:0}.pf{border:0;background:#F2F2F2}.dx{border:0;background:#F2F2F2}
+.row .pc{flex:0 0 46%}
+@media(prefers-reduced-motion:reduce){.hero .sl,.hero img,.fs,.tile .sz{transition:none}}
+
+/* ===== YATZIV: classic Israeli store theme ===== */
+:root{--ink:#14193A;--red:#D71920;--navy:#14193A;--rule:#E3E5EC;--soft:#F3F4F8}
+body{color:#14193A;padding-bottom:calc(90px + env(safe-area-inset-bottom,0px))}
+.ann{background:#0A0A0A;font-weight:600;font-size:12.5px}
+.hd{border-bottom:1px solid var(--rule);box-shadow:0 2px 10px rgba(20,25,58,.04)}
+.hd .in{height:64px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:900;letter-spacing:0;font-size:22px;color:#14193A}
+.logo span{display:flex;flex-direction:column;line-height:1}.logo small{font-size:9.5px;font-weight:600;letter-spacing:.14em;color:#6a6f8a;margin-top:2px}
+.cn{background:var(--red)}
+.yt{display:flex;align-items:center;gap:14px;padding:34px max(16px,env(safe-area-inset-left,0px)) 14px}
+.yt::before,.yt::after{content:"";flex:1;height:2px;background:#14193A}
+.yt h2{margin:0;font-size:clamp(22px,6.4vw,30px);font-weight:900;text-align:center;line-height:1.1;letter-spacing:-.02em}
+.yt1{margin:0;padding:20px max(16px,env(safe-area-inset-left,0px)) 8px;text-align:center;font-size:30px;font-weight:900;letter-spacing:-.02em}
+/* hero */
+.hs{position:relative;background:#14193A}
+.hst{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;direction:ltr}.hst::-webkit-scrollbar{display:none}
+.hsl{flex:0 0 100%;scroll-snap-align:start;position:relative;min-height:340px;display:grid;grid-template-columns:1fr 1fr;align-items:center;direction:rtl;overflow:hidden;padding:26px max(18px,env(safe-area-inset-left,0px))}
+.hc0{background:linear-gradient(120deg,#14193A,#243A8C)}.hc1{background:linear-gradient(120deg,#6E0F18,#D71920)}.hc2{background:linear-gradient(120deg,#0B3D2B,#1E8E5A)}.hc3{background:linear-gradient(120deg,#3A2410,#8C5A24)}
+.hsl img{width:100%;max-height:300px;object-fit:contain;mix-blend-mode:normal;border-radius:14px;box-shadow:0 20px 40px rgba(0,0,0,.35);transform:rotate(3deg);background:#fff}
+.hsl .tx{color:#fff;padding-inline-end:10px}.hsl small{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;opacity:.85}
+.hsl h1{margin:6px 0;font-size:clamp(28px,8vw,44px);font-weight:900;letter-spacing:-.02em;line-height:1.05}.hsl p{margin:0 0 16px;opacity:.85;font-size:14px}
+.hb2{background:#fff;color:#14193A;border:0;font-weight:900;font-size:15px;padding:12px 26px;border-radius:6px;font-family:var(--f)}
+.hdt,.dts{display:flex;justify-content:center;gap:8px;padding:12px 0}.hdt{position:absolute;inset-inline:0;bottom:6px;padding:0}
+.hdt i,.dts i{width:9px;height:9px;border-radius:50%;background:#c9ccd8}.hdt i{background:rgba(255,255,255,.4)}.hdt i.on,.dts i.on{background:var(--red)}.hdt i.on{background:#fff}
+/* carousels */
+.car{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;padding:8px max(16px,env(safe-area-inset-left,0px)) 4px;scrollbar-width:none}.car::-webkit-scrollbar{display:none}
+.cc{flex:0 0 96px;scroll-snap-align:start;background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:8px;font-family:var(--f);color:#14193A}
+.ci{width:88px;height:88px;border-radius:50%;background:#fff;box-shadow:0 4px 14px rgba(20,25,58,.14);display:grid;place-items:center;padding:14px}.ci img{width:100%;height:100%;object-fit:contain}
+.ci.mk{display:grid;grid-template-columns:1fr 1fr;gap:3px;padding:14px}.ci.mk img{width:100%;height:100%}
+.cc small{font-size:12.5px;font-weight:600;text-align:center;line-height:1.2}
+.arw{display:flex;justify-content:center;gap:12px;padding:12px 0 4px}.arw button{width:42px;height:42px;border-radius:50%;border:0;background:var(--red);color:#fff;font-size:26px;line-height:1;display:grid;place-items:center;padding-bottom:3px;transition:opacity .2s}
+/* product rows */
+.prow{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px max(14px,env(safe-area-inset-left,0px));scrollbar-width:none}.prow::-webkit-scrollbar{display:none}
+.prow .tile{flex:0 0 calc(50% - 6px);scroll-snap-align:start}
+@media(min-width:700px){.prow .tile{flex-basis:calc(25% - 10px)}}
+.tile{background:#fff;border:1px solid var(--rule);border-radius:12px;padding-bottom:12px;text-align:center}
+.pgrid{gap:12px;padding-inline:max(12px,env(safe-area-inset-left,0px))}
+.tile .im{aspect-ratio:1/1.08;background:#fff;border-radius:12px 12px 0 0}
+.tile .im img{object-fit:contain;padding:6px;object-position:center}
+.tile .mt2{padding:8px 8px 0}.tile .mt2 b{font-weight:700;font-size:14px;line-height:1.3;min-height:36px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.tile .mt2 small{display:block;font-size:11.5px;color:#7a7f98;min-height:15px}
+.tile .mt2 span{font-size:18px;font-weight:900;color:#14193A;margin-top:4px}
+.tile .qa{position:static;width:calc(100% - 20px);height:40px;margin:10px 10px 0;border-radius:6px;background:#14193A;color:#fff;font-size:14px;font-weight:700;box-shadow:none;font-weight:800;border:0;display:block;font-family:var(--f)}
+.tile .bd{background:var(--red);color:#fff;border-radius:3px;font-weight:800;letter-spacing:0;top:8px;inset-inline-start:8px}
+.tile .sz{border-radius:12px 12px 0 0}
+.tile .hh{color:#14193A}
+.yra{display:flex;justify-content:center;padding:4px 16px 8px}.yra button{border:2px solid #14193A;background:#fff;color:#14193A;font-weight:900;font-size:15px;padding:12px 26px;border-radius:6px;font-family:var(--f)}.yra button:active{background:#14193A;color:#fff}.ptc{width:100%;padding:12px;border:1px solid #ccd;border-radius:8px;font:inherit;background:#fff;margin-top:4px}.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:6px max(14px,env(safe-area-inset-left,0px))}
+.ct{position:relative;border:0;padding:0;border-radius:12px;overflow:hidden;background:#EEF0F6;aspect-ratio:1/1.15}.ct img{width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block}.ct span{position:absolute;inset-inline:0;bottom:0;background:linear-gradient(transparent,rgba(10,12,30,.82));color:#fff;font-weight:800;font-size:14px;padding:26px 6px 9px;text-align:center}
+.why{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:6px max(14px,env(safe-area-inset-left,0px)) 0;border:1px solid var(--rule);border-radius:12px;overflow:hidden}
+.why div{padding:22px 12px;text-align:center;border:0;border-inline-end:1px solid var(--rule);border-bottom:1px solid var(--rule);background:#fff}.why div:nth-child(2n){border-inline-end:0}.why div:nth-child(n+3){border-bottom:0}
+.why svg{width:46px;height:46px;stroke:#14193A;fill:none;stroke-width:1.4}.why b{display:block;font-size:15px;margin-top:8px}.why span{display:block;font-size:12.5px;color:#6a6f8a;margin-top:3px;line-height:1.35}
+.faq{padding:4px max(14px,env(safe-area-inset-left,0px)) 0;display:grid;gap:10px}.faq details{border:1px solid var(--rule);border-radius:10px;background:#fff}.faq summary{list-style:none;padding:16px;font-weight:800;font-size:15px;display:flex;justify-content:space-between;gap:10px;cursor:pointer}.faq summary::-webkit-details-marker{display:none}.faq summary::after{content:"⌄";font-size:20px;line-height:.9;transition:transform .2s}.faq details[open] summary::after{transform:rotate(180deg)}.faq p{margin:0;padding:0 16px 16px;color:#4a4f68;line-height:1.55;font-size:14.5px}
+.ft{background:#0A0A0A;margin-top:34px}
+/* shop page */
+.tbar{top:64px;border-radius:0}.tbar>*{height:46px}
+.rng{margin:10px max(14px,env(safe-area-inset-left,0px)) 6px;color:#555;font-size:13.5px}
+.pgn{display:flex;justify-content:center;gap:6px;padding:26px 0 10px}.pgn button{min-width:40px;height:40px;border:1px solid var(--rule);background:#fff;font-weight:800;border-radius:6px;font-family:var(--f);color:#14193A}.pgn button.on{background:#14193A;color:#fff;border-color:#14193A}.pgn button:disabled{opacity:.35}
+.chips button{border-radius:999px;border-color:#14193A}
+.cat-h{display:none}
+/* drawers */
+.dr{position:fixed;z-index:301;top:0;bottom:0;inset-inline-start:auto;inset-inline-end:0;right:0;width:min(86vw,360px);background:#fff;transform:translateX(105%);transition:transform .3s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column}.dr.on{transform:none}
+.dr header,.a11y header{display:flex;justify-content:space-between;align-items:center;padding:18px 20px;border-bottom:1px solid var(--rule)}.dr header b,.a11y header b{font-size:20px;font-weight:900}.dr header button,.a11y header button{background:none;border:0;font-size:22px;color:#14193A}
+.dbd{overflow-y:auto;flex:1;padding:6px 0 30px}.dbd>button,.dbd summary{display:block;width:100%;text-align:start;background:none;border:0;border-bottom:1px solid var(--rule);padding:16px 22px;font-family:var(--f);font-size:16px;font-weight:700;color:#14193A;list-style:none;cursor:pointer}.dbd summary::-webkit-details-marker{display:none}.dbd summary::after{content:"+";float:inline-end;font-size:22px;font-weight:300}.dbd details[open] summary::after{content:"−"}
+.dbd .sub{background:#F6F7FB;padding:6px 0}.dbd .sub button{display:flex;align-items:center;gap:12px;width:100%;background:none;border:0;padding:11px 30px;font-family:var(--f);font-size:15px;color:#14193A;text-align:start}.dbd .sub img{width:26px;height:26px;object-fit:contain}
+/* floating */
+.wa{position:fixed;z-index:120;inset-inline-end:14px;right:14px;left:auto;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;box-shadow:0 8px 22px rgba(37,211,102,.5)}
+.flc{position:fixed;z-index:120;left:14px;bottom:calc(18px + env(safe-area-inset-bottom,0px));display:grid;gap:10px}
+.fc{position:relative;width:48px;height:48px;border-radius:50%;border:0;background:#fff;color:#14193A;display:grid;place-items:center;box-shadow:0 6px 18px rgba(20,25,58,.25)}.fc.ac{background:#14193A;color:#fff}
+.cn2{position:absolute;top:-4px;inset-inline-start:-4px;min-width:20px;height:20px;border-radius:10px;background:var(--red);color:#fff;font-size:11px;font-weight:800;display:none;place-items:center;padding:0 4px}
+.toast{bottom:calc(88px + env(safe-area-inset-bottom,0px));background:#14193A;border-radius:10px}
+.a11y{position:fixed;z-index:330;left:14px;bottom:calc(86px + env(safe-area-inset-bottom,0px));width:min(86vw,300px);background:#fff;border-radius:14px;box-shadow:0 20px 50px rgba(0,0,0,.35);transform:scale(.9) translateY(14px);opacity:0;pointer-events:none;transition:all .22s;transform-origin:bottom left}.a11y.on{transform:none;opacity:1;pointer-events:auto}
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:14px}.ag button{border:1.5px solid #14193A;background:#fff;border-radius:8px;padding:12px 6px;font-family:var(--f);font-weight:700;font-size:13px;color:#14193A}.ag button[aria-pressed=true]{background:#14193A;color:#fff}.ag .rs{grid-column:1/-1;background:#EEF0F6}
+.a11y p{margin:0;padding:0 16px 14px;font-size:13px;text-align:center}
+html.gs{filter:grayscale(1)}html.ul a,html.ul button.lnk2{text-decoration:underline!important}
+html.hc body{background:#fff;color:#000}html.hc .tile,html.hc .why,html.hc .faq details{border-color:#000}html.hc .tile .qa,html.hc .hb2{background:#000;color:#fff}
+html.nm *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+dialog{border-radius:14px 14px 0 0}
+</style>
+</head>
+<body>
+<div class="ann">קנו 3 · הרביעית ב-40 ₪ &nbsp;|&nbsp; משלוח עד הבית</div>
+<header class="hd"><div class="in"><div class="l"><button class="ib2" id="hm" aria-label="תפריט"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 8h18M3 16h18"/></svg></button><button class="ib2" id="hs" aria-label="חיפוש"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg></button></div><a class="logo" href="#home" style="color:inherit;text-decoration:none"><svg viewBox="0 0 40 40" width="30" height="30"><circle cx="20" cy="20" r="18" fill="none" stroke="#14193A" stroke-width="2.4"/><path d="M20 8l7 5-2.7 8h-8.6L13 13z" fill="#D71920"/><path d="M13 13l-6 3M27 13l6 3M15.7 21l-3.7 7M24.3 21l3.7 7M16 29h8" stroke="#14193A" stroke-width="2" fill="none"/></svg><span>יציע<small>חולצות כדורגל</small></span></a><div class="r"><button class="ib2" id="hv" aria-label="שמרתי"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 20s-7-4.4-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.6-9 9-9 9z"/></svg></button><button class="ib2" id="hc" aria-label="סל"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg><span class="cn" id="cn" hidden>0</span></button></div></div></header>
+<main>
+<section class="view" id="v-home">
+<div class="hs" id="yhs"><div class="hst" id="yhst"></div><div class="hdt" id="yhd"></div></div>
+<div class="yt"><h2>קנה לפי קבוצה</h2></div><div class="car" id="ytm"></div><div class="arw" data-for="ytm"><button type="button" aria-label="הקודם">‹</button><button type="button" aria-label="הבא">›</button></div>
+<div class="yt"><h2>המוצרים הנמכרים ביותר</h2></div><div class="prow" id="ybs"></div><div class="dts" id="ybsd"></div>
+<div class="yt"><h2>הקטגוריות שלנו</h2></div><div class="cats" id="ycat"></div>
+<div class="yt"><h2>מוצרים חדשים</h2></div><div class="prow" id="ynw"></div><div class="dts" id="ynwd"></div>
+<div class="yt"><h2>קנה לפי ליגה</h2></div><div class="car" id="ylg"></div><div class="arw" data-for="ylg"><button type="button" aria-label="הקודם">‹</button><button type="button" aria-label="הבא">›</button></div>
+<div class="yt"><h2>חולצות רטרו</h2></div><div class="prow" id="yrt"></div><div class="dts" id="yrtd"></div><div class="yra"><button type="button" id="yra"></button></div>
+<div class="yt"><h2>למה דווקא אצלנו</h2></div>
+<div class="why"><div><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7z"/><circle cx="7" cy="17.5" r="1.5"/><circle cx="17" cy="17.5" r="1.5"/></svg><b>משלוח עד הבית</b><span>זמן אספקה 2.5-3 שבועות</span></div><div><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="9" width="16" height="11"/><path d="M12 9v11M4 13h16M12 9c-3-5-6-2-3 0M12 9c3-5 6-2 3 0"/></svg><b>קנו 3, הרביעית ב-40 ₪</b><span>המבצע מחושב אוטומטית בסל</span></div><div><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg><b>הזמנה בוואטסאפ</b><span>בלי הרשמה ובלי סיבוכים</span></div><div><svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><b>שם ומספר על החולצה</b><span>בחירה קלה בדף המוצר</span></div></div>
+<div class="yt"><h2>שאלות נפוצות</h2></div>
+<div class="faq" id="yfq"></div>
+<footer class="ft"><b>יציע</b>חולצות כדורגל של קבוצות ונבחרות.<br>לשאלות והזמנות: <a href="https://wa.me/972555568418" target="_blank" rel="noopener">055-556-8418 בוואטסאפ</a><br><br>עוסק פטור. אין אפשרות לבטל הזמנה לאחר שליחתה.<br>התמונות להמחשה בלבד. החולצות אינן מוצר רשמי של המועדונים.</footer>
+</section>
+
+<section class="view" id="v-shop" hidden>
+<div class="cat-h"><h1 id="sh1" class="yt1">כל החולצות</h1><p id="scn" hidden></p><p id="rng" class="rng"></p></div>
+<div class="tbar"><button id="tf" type="button"><svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>סינון<span id="tfn"></span></button><select id="tsr" aria-label="מיון"><option value="rec">מיון: מומלץ</option><option value="new">עונה חדשה</option><option value="az">שם קבוצה</option></select><button class="vw" id="tv" type="button" aria-label="תצוגה"><svg viewBox="0 0 24 24" stroke-linecap="round"><rect x="4" y="4" width="7" height="16"/><rect x="13" y="4" width="7" height="16"/></svg></button></div>
+<div class="chips" id="chips"></div>
+<div class="pgrid" id="sgx"></div>
+<div class="pgn" id="pgn"></div>
+</section>
+
+<section class="view" id="v-saved" hidden><div class="cat-h"><h1>שמרתי</h1><p id="vcn"></p></div><div class="sg2" id="vg2"></div><div class="empty" id="ve2" hidden><b>עוד אין מועדפים</b>לחצו על הלב בכל חולצה כדי לשמור אותה כאן.</div>
+<div class="w" style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px" id="vb2" hidden><a class="btn rd" id="vw2" href="#" target="_blank" rel="noopener" style="display:grid;place-items:center;padding:14px">שלחו בוואטסאפ</a><button class="btn ol" id="vc2" type="button">נקו הכל</button></div>
+<div id="vrs2" hidden><div class="sh2"><h2>נצפו לאחרונה</h2></div><div class="sg2" id="vr2"></div></div></section>
+
+<section class="view" id="v-order" hidden><div class="cat-h"><h1>החולצות בהזמנה</h1></div><div class="sg2" id="og2"></div><p style="text-align:center;margin-top:24px"><a class="btn rd" href="#home" style="display:inline-block;padding:14px 30px;text-decoration:none">לחנות</a></p></section>
+</main>
+
+<a class="wa" id="ywa" href="#" target="_blank" rel="noopener" aria-label="וואטסאפ"><svg viewBox="0 0 32 32" width="30" height="30" fill="#fff"><path d="M16 3a13 13 0 00-11 19.8L3 29l6.4-1.7A13 13 0 1016 3zm0 2.3a10.7 10.7 0 11-5.6 19.8l-.4-.2-3.8 1 1-3.7-.3-.4A10.7 10.7 0 0116 5.3zm-4 5.5c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.100s1.300 3.600 1.500 3.800c.2.200 2.600 4.100 6.400 5.600 3.100 1.200 3.700.900 4.400.900.700-.1 2.200-.9 2.500-1.800.3-.9.3-1.600.2-1.800-.1-.2-.4-.3-.8-.5s-2.200-1.100-2.500-1.200c-.3-.1-.6-.2-.8.200-.2.300-.9 1.200-1.100 1.400-.2.200-.4.300-.8.100-.4-.2-1.600-.6-3-1.800-1.100-1-1.900-2.200-2.100-2.600-.2-.4 0-.6.200-.8l.6-.7c.2-.2.200-.4.400-.7.100-.3.100-.5 0-.7l-1.100-2.700c-.3-.7-.6-.6-.8-.6z"/></svg></a>
+<div class="flc"><button class="fc" id="ycart" type="button" aria-label="סל"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><path d="M3 4h2l2.4 11h10.2L20 7H6"/><circle cx="9" cy="19" r="1.3"/><circle cx="17" cy="19" r="1.3"/></svg><span class="cn2" id="ycn">0</span></button><button class="fc ac" id="yac" type="button" aria-label="נגישות"><svg viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><circle cx="12" cy="4.2" r="2.2"/><path d="M4 8.2l8 1.3 8-1.3.4 1.9-6 1.2v3.700l2.200 6.300-1.900.7L12 17l-2.700 5.300-1.900-.7 2.200-6.300v-3.700l-6-1.200z"/></svg></button></div>
+<aside class="a11y" id="ya" aria-label="תפריט נגישות"><header><b>נגישות</b><button type="button" id="yax" aria-label="סגור">✕</button></header><div class="ag"><button data-a="fp">הגדלת טקסט</button><button data-a="fm">הקטנת טקסט</button><button data-a="hc">ניגודיות גבוהה</button><button data-a="gs">גווני אפור</button><button data-a="ul">הדגשת קישורים</button><button data-a="nm">עצירת אנימציות</button><button data-a="rs" class="rs">איפוס</button></div><p><a href="#" id="yas">הצהרת נגישות</a></p></aside>
+<aside class="dr" id="ydr" aria-label="תפריט"><header><b>תפריט</b><button type="button" id="ydx" aria-label="סגור">✕</button></header><div class="dbd" id="ydb"></div></aside>
+<div class="ov" id="ov"></div>
+<aside class="fs" id="fs" aria-label="סינון"><header><b>סינון</b><button type="button" id="fx" aria-label="סגור">✕</button></header><div class="bd2" id="fbd"></div><footer><button type="button" id="fclr">נקה</button><button class="pr2" type="button" id="fok">הצג</button></footer></aside>
+<div class="sov" id="sov"><div class="top"><input id="sin" type="search" placeholder="חפשו קבוצה, צבע או עונה" aria-label="חיפוש" autocomplete="off"><button class="ib2" id="sx" aria-label="סגור" style="font-size:22px">✕</button></div><div class="bd3" id="sbd"></div></div>
+<div class="fb" id="fb"><span id="fbn"></span><span id="fbt"></span></div>
+<div class="toast" id="ts" hidden></div>
+<dialog id="sh" aria-label="פרטי חולצה"><button class="dx" id="shx" aria-label="סגור">×</button><div id="shc"></div></dialog>
+
+<dialog id="cd" aria-label="הסל"><button class="dx" id="cdx" aria-label="סגור">×</button>
+<div class="dp" style="padding-top:56px">
+<div id="cs"><h2 style="font-size:40px">הסל</h2>
+<div class="pgb" id="pgb"></div><p class="hint" id="hint"></p>
+<div id="items"></div>
+<div class="dsc" id="disc" hidden></div>
+<div class="tot"><span style="font-family:var(--hs);font-weight:900;font-size:22px">סה״כ</span><b id="sum">0 ₪</b></div>
+<div class="eta" id="eta"></div>
+<label class="chk"><input type="checkbox" id="gc"> זו מתנה</label>
+<label class="ff" id="gl" hidden style="margin:8px 0 0"><span style="font-weight:600;font-size:14px">ברכה למתנה</span><input type="text" id="gt" maxlength="80" placeholder="מזל טוב!"></label>
+<label class="ff" style="margin:10px 0 0"><span style="font-weight:600;font-size:14px">הערה להזמנה (לא חובה)</span><input type="text" id="on" maxlength="120"></label>
+<p class="warn">שימו לב: אין אפשרות לבטל הזמנה לאחר שליחתה.</p>
+<button class="btn rd full" id="go" type="button">להזמנה בוואטסאפ</button>
+<div class="shr"><a class="btn ol" id="scw" href="#" target="_blank" rel="noopener">שלחו סל לחבר</a><button class="btn ol" id="more" type="button">המשך קניות</button></div></div>
+<div id="fm" hidden><h2 style="font-size:40px">פרטי משלוח</h2>
+<div class="ff">
+<label>שם<input type="text" id="fn" autocomplete="name"></label>
+<label>כתובת<input type="text" id="fa" autocomplete="street-address"></label>
+<label>עיר<input type="text" id="fcy" autocomplete="address-level2"></label>
+<label>מדינה/מחוז<input type="text" id="fr" autocomplete="address-level1"></label>
+<label>מדינה<input type="text" id="fo" autocomplete="country-name" value="ישראל"></label>
+<label>מיקוד<input type="text" id="fz" inputmode="numeric" autocomplete="postal-code"></label>
+<label>טלפון<input type="tel" id="fp" autocomplete="tel"></label>
+</div>
+<a class="btn rd full" id="send" href="#" target="_blank" rel="noopener">שליחה בוואטסאפ</a>
+<button class="lnk" id="bk" type="button">חזרה לסל</button></div>
+</div></dialog>
+
+<dialog id="fd" aria-label="מציאת מידה"><button class="dx" id="fdx" aria-label="סגור">×</button>
+<div class="dp fin" style="padding-top:56px"><h2 style="font-size:40px">מוצאים מידה</h2>
+<p class="mut" style="margin:6px 0 12px">הזינו גובה ומשקל ונציע מידה. בין שתיים? קחו את הגדולה.</p>
+<div class="seg"><button type="button" id="fa1" aria-pressed="true">מבוגר</button><button type="button" id="fk1" aria-pressed="false">ילד</button></div>
+<div class="fi"><label>גובה (ס״מ)<input type="number" id="fh" inputmode="numeric" min="80" max="220" placeholder="175"></label>
+<label id="fwl">משקל (ק״ג)<input type="number" id="fw" inputmode="numeric" min="20" max="200" placeholder="70"></label></div>
+<div id="fres" aria-live="polite"></div>
+<button class="btn rd full" id="fuse" type="button" hidden>בחרו את המידה הזו</button>
+</div></dialog>
+
+<dialog id="mo" aria-label="עוד"><button class="dx" id="mox" aria-label="סגור">×</button>
+<div class="dp mo" style="padding-top:56px"><h2 style="font-size:40px;margin-bottom:10px">עוד</h2>
+<button class="ml" id="msz" type="button">טבלת מידות <span>←</span></button>
+<button class="ml" id="mrv" type="button">דירוג לקוחות <span>←</span></button>
+<button class="ml" id="mhw" type="button">איך מזמינים <span>←</span></button>
+<button class="ml" id="mth" type="button">מצב כהה / בהיר <span>◐</span></button>
+<a id="mwa" href="#" target="_blank" rel="noopener">שאלה בוואטסאפ <span>↗</span></a>
+<button class="ml" id="mad" type="button">להוסיף למסך הבית <span>＋</span></button>
+</div></dialog>
+
+<dialog id="dz" aria-label="מידע"><button class="dx" id="dzx" aria-label="סגור">×</button><div class="dp" id="dzc" style="padding-top:56px"></div></dialog>
+<template id="t-sz"><h2 style="font-size:40px">טבלת מידות</h2><p class="mut" style="margin:6px 0 10px">להערכה. סטייה של 1-2 ס״מ מקובלת.</p>
+<h3 style="font-size:26px;margin:18px 0 8px">מבוגרים</h3><div class="tw"><table><tr><th>מידה</th><th>גובה</th><th>משקל</th><th>אורך</th></tr><tr><td>S</td><td>160-170</td><td>60-65</td><td>71</td></tr><tr><td>M</td><td>170-175</td><td>66-70</td><td>73</td></tr><tr><td>L</td><td>175-180</td><td>71-75</td><td>75</td></tr><tr><td>XL</td><td>180-185</td><td>76-80</td><td>77</td></tr><tr><td>2XL</td><td>185-190</td><td>81-87</td><td>81</td></tr></table></div>
+<h3 style="font-size:26px;margin:18px 0 8px">ילדים</h3><div class="tw"><table><tr><th>מידה</th><th>גיל</th><th>גובה</th><th>אורך</th></tr><tr><td>4</td><td>3-4</td><td>95-105</td><td>44</td></tr><tr><td>6</td><td>4-5</td><td>105-115</td><td>47</td></tr><tr><td>8</td><td>5-6</td><td>115-125</td><td>50</td></tr><tr><td>10</td><td>7-8</td><td>125-135</td><td>53</td></tr><tr><td>12</td><td>8-9</td><td>135-145</td><td>56</td></tr><tr><td>14</td><td>10-11</td><td>145-155</td><td>59</td></tr><tr><td>16</td><td>12-13</td><td>155-165</td><td>62</td></tr></table></div>
+<h3 style="font-size:26px;margin:18px 0 8px">הטבלאות המקוריות</h3><img class="chart" src="data:image/...(תמונה)..." alt="טבלת מידות מבוגרים"><img class="chart" src="data:image/...(תמונה)..." alt="טבלת מידות ילדים"></template>
+
+
+<script>
+var HOST="https://dwrdwyts-gif.github.io/-12-/";
+var BASE=(/^https?:/.test(location.protocol)&&!/claude/.test(location.hostname))?location.origin+location.pathname:HOST,
+PHONE="972555568418",PRICE=95,RP=105,LSP=10,NMP=8,PTP=0,IMG={"2": "data:image/...(תמונה)...", "3": "data:image/...(תמונה)...", "4": "data:image/...(תמונה)...", "5": "data:image/...(תמונה)...", "6": "data:image/...(תמונה)...", "9": "data:image/...(תמונה)...", "12": "data:image/...(תמונה)...", "13": "data:image/...(תמונה)...", "14": "data:image/...(תמונה)...", "15": "data:image/...(תמונה)...", "16": "data:image/...(תמונה)...", "17": "data:image/...(תמונה)...", "18": "data:image/...(תמונה)...", "19": "data:image/...(תמונה)...", "20": "data:image/...(תמונה)...", "21": "data:image/...(תמונה)...", "22": "data:image/...(תמונה)...", "23": "data:image/...(תמונה)...", "24": "data:image/...(תמונה)...", "25": "data:image/...(תמונה)...", "26": "data:image/...(תמונה)...", "27": "data:image/...(תמונה)...", "28": "data:image/...(תמונה)...", "29": "data:image/...(תמונה)...", "30": "data:image/...(תמונה)...", "32": "data:image/...(תמונה)...", "37": "data:image/...(תמונה)...", "40": "data:image/...(תמונה)...", "44": "data:image/...(תמונה)...", "48": "data:image/...(תמונה)...", "49": "data:image/...(תמונה)...", "50": "data:image/...(תמונה)...", "51": "data:image/...(תמונה)...", "52": "data:image/...(תמונה)...", "53": "data:image/...(תמונה)...", "54": "data:image/...(תמונה)...", "55": "data:image/...(תמונה)...", "56": "data:image/...(תמונה)...", "57": "data:image/...(תמונה)...", "58": "data:image/...(תמונה)...", "59": "data:image/...(תמונה)...", "60": "data:image/...(תמונה)...", "61": "data:image/...(תמונה)...", "62": "data:image/...(תמונה)...", "63": "data:image/...(תמונה)...", "68": "data:image/...(תמונה)...", "69": "data:image/...(תמונה)...", "70": "data:image/...(תמונה)...", "71": "data:image/...(תמונה)...", "72": "data:image/...(תמונה)...", "73": "data:image/...(תמונה)...", "74": "data:image/...(תמונה)...", "75": "data:image/...(תמונה)...", "76": "data:image/...(תמונה)...", "77": "data:image/...(תמונה)...", "78": "data:image/...(תמונה)...", "79": "data:image/...(תמונה)...", "80": "data:image/...(תמונה)...", "81": "data:image/...(תמונה)...", "82": "data:image/...(תמונה)...", "83": "data:image/...(תמונה)...", "84": "data:image/...(תמונה)...", "85": "data:image/...(תמונה)...", "87": "data:image/...(תמונה)...", "88": "data:image/...(תמונה)...", "89": "data:image/...(תמונה)...", "90": "data:image/...(תמונה)...", "91": "data:image/...(תמונה)...", "92": "data:image/...(תמונה)...", "93": "data:image/...(תמונה)...", "94": "data:image/...(תמונה)...", "95": "data:image/...(תמונה)...", "96": "data:image/...(תמונה)...", "97": "data:image/...(תמונה)...", "98": "data:image/...(תמונה)...", "99": "data:image/...(תמונה)...", "100": "data:image/...(תמונה)...", "101": "data:image/...(תמונה)...", "102": "data:image/...(תמונה)...", "103": "data:image/...(תמונה)...", "104": "data:image/...(תמונה)...", "105": "data:image/...(תמונה)...", "106": "data:image/...(תמונה)...", "107": "data:image/...(תמונה)...", "108": "data:image/...(תמונה)...", "109": "data:image/...(תמונה)...", "110": "data:image/...(תמונה)...", "111": "data:image/...(תמונה)...", "112": "data:image/...(תמונה)...", "113": "data:image/...(תמונה)...", "114": "data:image/...(תמונה)...", "115": "data:image/...(תמונה)...", "116": "data:image/...(תמונה)...", "117": "data:image/...(תמונה)...", "118": "data:image/...(תמונה)...", "119": "data:image/...(תמונה)...", "120": "data:image/...(תמונה)...", "121": "data:image/...(תמונה)...", "122": "data:image/...(תמונה)...", "123": "data:image/...(תמונה)...", "124": "data:image/...(תמונה)...", "125": "data:image/...(תמונה)...", "126": "data:image/...(תמונה)...", "127": "data:image/...(תמונה)...", "128": "data:image/...(תמונה)...", "129": "data:image/...(תמונה)...", "130": "data:image/...(תמונה)...", "131": "data:image/...(תמונה)...", "132": "data:image/...(תמונה)...", "133": "data:image/...(תמונה)...", "134": "data:image/...(תמונה)...", "135": "data:image/...(תמונה)...", "136": "data:image/...(תמונה)...", "137": "data:image/...(תמונה)...", "138": "data:image/...(תמונה)...", "139": "data:image/...(תמונה)...", "140": "data:image/...(תמונה)...", "141": "data:image/...(תמונה)...", "pt": "data:image/...(תמונה)...", "b10": "data:image/...(תמונה)...", "b11": "data:image/...(תמונה)...", "b13": "data:image/...(תמונה)...", "b14": "data:image/...(תמונה)...", "b15": "data:image/...(תמונה)...", "p1": "data:image/...(תמונה)...", "p2": "data:image/...(תמונה)...", "p3": "data:image/...(תמונה)...", "p4": "data:image/...(תמונה)...", "p5": "data:image/...(תמונה)...", "p6": "data:image/...(תמונה)...", "p7": "data:image/...(תמונה)...", "p8": "data:image/...(תמונה)...", "v1": "data:image/...(תמונה)...", "v2": "data:image/...(תמונה)...", "v3": "data:image/...(תמונה)...", "v4": "data:image/...(תמונה)...", "v5": "data:image/...(תמונה)...", "v6": "data:image/...(תמונה)...", "v7": "data:image/...(תמונה)...", "v8": "data:image/...(תמונה)...", "v9": "data:image/...(תמונה)...", "y1": "data:image/...(תמונה)...", "y2": "data:image/...(תמונה)...", "y3": "data:image/...(תמונה)...", "y4": "data:image/...(תמונה)...", "y5": "data:image/...(תמונה)...", "y6": "data:image/...(תמונה)...", "y7": "data:image/...(תמונה)...", "y8": "data:image/...(תמונה)...", "y9": "data:image/...(תמונה)...", "m9": "data:image/...(תמונה)...", "m10": "data:image/...(תמונה)...", "m8": "data:image/...(תמונה)...", "m1": "data:image/...(תמונה)...", "m2": "data:image/...(תמונה)...", "m3": "data:image/...(תמונה)...", "m4": "data:image/...(תמונה)...", "m5": "data:image/...(תמונה)...", "m6": "data:image/...(תמונה)...", "m7": "data:image/...(תמונה)...", "c7": "data:image/...(תמונה)...", "c8": "data:image/...(תמונה)...", "c9": "data:image/...(תמונה)...", "c4": "data:image/...(תמונה)...", "c5": "data:image/...(תמונה)...", "c6": "data:image/...(תמונה)...", "c1": "data:image/...(תמונה)...", "c2": "data:image/...(תמונה)...", "c3": "data:image/...(תמונה)...", "r1": "data:image/...(תמונה)...", "r2": "data:image/...(תמונה)...", "r3": "data:image/...(תמונה)...", "r4": "data:image/...(תמונה)...", "r5": "data:image/...(תמונה)...", "r6": "data:image/...(תמונה)...", "r7": "data:image/...(תמונה)...", "r8": "data:image/...(תמונה)...", "r9": "data:image/...(תמונה)...", "b7": "data:image/...(תמונה)...", "b8": "data:image/...(תמונה)...", "b9": "data:image/...(תמונה)...", "b1": "data:image/...(תמונה)...", "b2": "data:image/...(תמונה)...", "b3": "data:image/...(תמונה)...", "b4": "data:image/...(תמונה)...", "b5": "data:image/...(תמונה)...", "b6": "data:image/...(תמונה)...", "nw1": "data:image/...(תמונה)...", "nw2": "data:image/...(תמונה)...", "nw3": "data:image/...(תמונה)...", "ab1": "data:image/...(תמונה)...", "ab2": "data:image/...(תמונה)...", "ab3": "data:image/...(תמונה)...", "nwl": "data:image/...(תמונה)...", "abl": "data:image/...(תמונה)...", "sanl": "data:image/...(תמונה)...", "rt_liv": "data:image/...(תמונה)...", "rt_rmaw": "data:image/...(תמונה)...", "rt_rmh13": "data:image/...(תמונה)...", "rt_rmp16": "data:image/...(תמונה)...", "rt_rmls": "data:image/...(תמונה)...", "rt_mub": "data:image/...(תמונה)...", "rt_mu11": "data:image/...(תמונה)...", "rt_mu18": "data:image/...(תמונה)...", "rt_mu09": "data:image/...(תמונה)...", "rt_ars04": "data:image/...(תמונה)...", "rt_ars05": "data:image/...(תמונה)...", "rt_bra04": "data:image/...(תמונה)...", "rt_bra02": "data:image/...(תמונה)...", "rt_bar13": "data:image/...(תמונה)...", "rt_bar15": "data:image/...(תמונה)...", "rt_bar08": "data:image/...(תמונה)...", "rt_bar99": "data:image/...(תמונה)...", "rt_eng04": "data:image/...(תמונה)...", "rt_arg06": "data:image/...(תמונה)...", "rt_arg06a": "data:image/...(תמונה)...", "rt_san": "data:image/...(תמונה)...", "rt_por14": "data:image/...(תמונה)...", "rt_mil02": "data:image/...(תמונה)...", "rt_mil06a": "data:image/...(תמונה)...", "rt_mil06t": "data:image/...(תמונה)...", "rt_fra06": "data:image/...(תמונה)...", "rt_ned88": "data:image/...(תמונה)...", "rt_bay95": "data:image/...(תמונה)...", "rt_bvb88": "data:image/...(תמונה)..."},T=[{"n": "מכבי חיפה", "l": "22", "k": [{"i": "m1", "k": "בית · ירוק פסים", "c": "h"}, {"i": "m2", "k": "בית · ירוק גלים", "c": "h"}, {"i": "m3", "k": "בית · ירוק גיאומטרי", "c": "h"}, {"i": "m4", "k": "חוץ · לבן רטרו", "c": "a"}, {"i": "m5", "k": "חוץ · לבן פסים", "c": "a"}, {"i": "m6", "k": "שלישית · שחור-ירוק", "c": "t"}, {"i": "m7", "k": "שלישית · שחור מוצל", "c": "t"}]}, {"n": "מכבי תל אביב", "l": "24", "k": [{"i": "18", "k": "בית · צהוב", "c": "h"}, {"i": "4", "k": "בית · צהוב-לבן", "c": "h"}, {"i": "12", "k": "בית · פסים צהוב-כחול", "c": "h"}, {"i": "19", "k": "שלישית · כחול כהה", "c": "t"}, {"i": "m8", "k": "שלישית · כחול פסים", "c": "t"}, {"i": "m9", "k": "חוץ · כחול משבצות", "c": "a"}, {"i": "m10", "k": "חוץ · שחור", "c": "a"}]}, {"n": "הפועל תל אביב", "l": "21", "k": [{"i": "13", "k": "בית · אדום", "c": "h"}, {"i": "16", "k": "חוץ · אפור-לבן", "c": "a"}, {"i": "15", "k": "שלישית · שחור", "c": "t"}]}, {"n": "בית\"ר ירושלים", "l": "23", "k": [{"i": "5", "k": "בית · צהוב-שחור", "c": "h"}, {"i": "32", "k": "בית · צהוב עם פס שחור", "c": "h"}, {"i": "25", "k": "בית · צהוב-שחור אריה", "c": "h"}, {"i": "2", "k": "חוץ · לבן-שחור", "c": "a"}, {"i": "26", "k": "חוץ · לבן פולו", "c": "a"}, {"i": "17", "k": "שלישית · תכלת", "c": "t"}, {"i": "6", "k": "שלישית · כתום", "c": "t"}, {"i": "9", "k": "שלישית · שחור-צהוב מיוחדת", "c": "t"}]}, {"n": "הפועל באר שבע", "l": "20", "k": [{"i": "27", "k": "בית · אדום-לבן", "c": "h"}, {"i": "3", "k": "חוץ · לבן", "c": "a"}, {"i": "14", "k": "שלישית · אדום-שחור", "c": "t"}]}, {"n": "הפועל פתח תקווה", "l": "pt", "k": [{"i": "30", "k": "בית · כחול", "c": "h"}, {"i": "28", "k": "חוץ · לבן-כחול", "c": "a"}, {"i": "29", "k": "שלישית · שחור-כחול", "c": "t"}]}, {"n": "ריאל מדריד", "l": "48", "k": [{"i": "r1", "k": "בית · ורוד-לבן 26/27", "c": "h"}, {"i": "r2", "k": "בית · צהוב-לבן 25/26", "c": "h"}, {"i": "r3", "k": "בית · שחור-לבן 24/25", "c": "h"}, {"i": "r4", "k": "חוץ · ירוק 26/27", "c": "a"}, {"i": "r5", "k": "חוץ · כתום 24/25", "c": "a"}, {"i": "r6", "k": "חוץ · אפור 25/26", "c": "a"}, {"i": "r7", "k": "שלישית · כחול 25/26", "c": "t"}, {"i": "r8", "k": "שלישית · ורוד 26/27", "c": "t"}, {"i": "r9", "k": "שלישית · שחור 24/25", "c": "t"}, {"i": "rt_rmaw", "k": "חוץ · כחול נייבי 18/19", "c": "a", "r": 1}, {"i": "rt_rmh13", "k": "בית · לבן 12/13", "c": "h", "r": 1}, {"i": "rt_rmp16", "k": "חוץ · סגול 16/17", "c": "a", "r": 1}, {"i": "rt_rmls", "k": "בית · לבן שרוול ארוך 09/10", "c": "h", "r": 1}]}, {"n": "ברצלונה", "l": "44", "k": [{"i": "c1", "k": "בית · אדום-כחול 26/27", "c": "h"}, {"i": "c2", "k": "חוץ · סגול 26/27", "c": "a"}, {"i": "c3", "k": "שלישית · כחול 26/27", "c": "t"}, {"i": "c4", "k": "בית · אדום-כחול 25/26", "c": "h"}, {"i": "c5", "k": "חוץ · צהוב 25/26", "c": "a"}, {"i": "c6", "k": "שלישית · כתום 25/26", "c": "t"}, {"i": "c7", "k": "בית · אדום-כחול 24/25", "c": "h"}, {"i": "c8", "k": "חוץ · שחור 24/25", "c": "a"}, {"i": "c9", "k": "שלישית · תכלת 24/25", "c": "t"}, {"i": "rt_bar13", "k": "חוץ · צהוב-אדום פסים 13/14", "c": "a", "r": 1}, {"i": "rt_bar15", "k": "בית · כחול-אדום פסים 15/16", "c": "h", "r": 1}, {"i": "rt_bar08", "k": "בית · כחול-בורדו חצאים 08/09", "c": "h", "r": 1}, {"i": "rt_bar99", "k": "בית · כחול-בורדו חצאים 99/00", "c": "h", "r": 1}]}, {"n": "פריז סן ז'רמן", "l": "40", "k": [{"i": "p1", "k": "בית · כחול פס אדום רחב", "c": "h"}, {"i": "p2", "k": "בית · כחול כהה עיטור", "c": "h"}, {"i": "p3", "k": "בית · כחול פס אדום", "c": "h"}, {"i": "p4", "k": "חוץ · לבן מכחול", "c": "a"}, {"i": "p5", "k": "חוץ · לבן פסים", "c": "a"}, {"i": "p6", "k": "שלישית · כחול כנפיים", "c": "t"}, {"i": "p7", "k": "שלישית · אדום", "c": "t"}, {"i": "p8", "k": "שלישית · שחור", "c": "t"}]}, {"n": "באיירן מינכן", "l": "37", "k": [{"i": "y1", "k": "בית · אדום כהה", "c": "h"}, {"i": "y2", "k": "בית · אדום-לבן", "c": "h"}, {"i": "y3", "k": "בית · אדום פסים", "c": "h"}, {"i": "y4", "k": "חוץ · לבן-אדום", "c": "a"}, {"i": "y5", "k": "חוץ · לבן רטרו", "c": "a"}, {"i": "y6", "k": "חוץ · לבן מנומר", "c": "a"}, {"i": "y7", "k": "שלישית · שחור-אדום", "c": "t"}, {"i": "y8", "k": "שלישית · סגול", "c": "t"}, {"i": "y9", "k": "שלישית · שחור משבצות", "c": "t"}, {"i": "rt_bay95", "k": "בית · אדום-כחול פסים 95/97", "c": "h", "r": 1}]}, {"n": "מנצ'סטר סיטי", "l": "52", "k": [{"i": "51", "k": "בית · תכלת", "c": "h"}, {"i": "50", "k": "חוץ · לבן-כחול", "c": "a"}, {"i": "49", "k": "שלישית · שחור-זהב", "c": "t"}]}, {"n": "ארסנל", "l": "56", "k": [{"i": "55", "k": "בית · אדום", "c": "h"}, {"i": "53", "k": "חוץ · כחול כהה", "c": "a"}, {"i": "54", "k": "שלישית · צהוב בהיר", "c": "t"}, {"i": "rt_ars04", "k": "בית · אדום-לבן 04/05", "c": "h", "r": 1}, {"i": "rt_ars05", "k": "בית · בורדו 05/06", "c": "h", "r": 1}]}, {"n": "אינטר", "l": "63", "k": [{"i": "62", "k": "בית · כחול-שחור", "c": "h"}, {"i": "61", "k": "חוץ · לבן פסים", "c": "a"}]}, {"n": "דורטמונד", "l": "68", "k": [{"i": "v1", "k": "בית · צהוב-שחור", "c": "h"}, {"i": "v2", "k": "בית · צהוב", "c": "h"}, {"i": "v3", "k": "בית · צהוב פסים", "c": "h"}, {"i": "v4", "k": "חוץ · ניאון-אפור", "c": "a"}, {"i": "v5", "k": "חוץ · שחור", "c": "a"}, {"i": "v6", "k": "חוץ · שחור-צהוב", "c": "a"}, {"i": "v7", "k": "שלישית · סגול", "c": "t"}, {"i": "v8", "k": "שלישית · לבן", "c": "t"}, {"i": "v9", "k": "שלישית · לבן משבצות", "c": "t"}, {"i": "rt_bvb88", "k": "בית · צהוב 88/89", "c": "h", "r": 1}]}, {"n": "אתלטיקו מדריד", "l": "60", "k": [{"i": "59", "k": "בית · אדום-לבן", "c": "h"}, {"i": "58", "k": "חוץ · אפור פסים", "c": "a"}, {"i": "57", "k": "שלישית · שחור-ירוק", "c": "t"}]}, {"n": "קומו", "l": "73", "k": [{"i": "72", "k": "בית · כחול", "c": "h"}, {"i": "70", "k": "חוץ · לבן", "c": "a"}, {"i": "71", "k": "שלישית · תכלת", "c": "t"}, {"i": "69", "k": "שלישית · שחור-כתום", "c": "t"}]}, {"n": "מילאן", "l": "77", "k": [{"i": "75", "k": "בית · אדום-שחור", "c": "h"}, {"i": "76", "k": "חוץ · לבן", "c": "a"}, {"i": "74", "k": "שלישית · שחור", "c": "t"}, {"i": "rt_mil02", "k": "בית · אדום-שחור פסים 02/03", "c": "h", "r": 1}, {"i": "rt_mil06a", "k": "חוץ · לבן 06/07", "c": "a", "r": 1}, {"i": "rt_mil06t", "k": "שלישית · שחור 06/07", "c": "t", "r": 1}]}, {"n": "צ'לסי", "l": "81", "k": [{"i": "80", "k": "בית · כחול", "c": "h"}, {"i": "79", "k": "חוץ · שחור", "c": "a"}, {"i": "78", "k": "שלישית · לבן", "c": "t"}]}, {"n": "מנצ'סטר יונייטד", "l": "85", "k": [{"i": "84", "k": "בית · אדום", "c": "h"}, {"i": "83", "k": "חוץ · כחול", "c": "a"}, {"i": "82", "k": "שלישית · קרם", "c": "t"}, {"i": "rt_mub", "k": "חוץ · שחור 07/08", "c": "a", "r": 1}, {"i": "rt_mu11", "k": "חוץ · לבן 10/11", "c": "a", "r": 1}, {"i": "rt_mu18", "k": "בית · אדום 18/19", "c": "h", "r": 1}, {"i": "rt_mu09", "k": "שלישית · כחול 08/09", "c": "t", "r": 1}]}, {"n": "ליברפול", "l": "102", "k": [{"i": "101", "k": "בית · אדום", "c": "h"}, {"i": "99", "k": "חוץ · לבן", "c": "a"}, {"i": "100", "k": "שלישית · בורדו-שחור", "c": "t"}, {"i": "rt_liv", "k": "בית · אדום 06/08", "c": "h", "r": 1}]}, {"n": "טוטנהאם", "l": "98", "k": [{"i": "95", "k": "בית · לבן", "c": "h"}, {"i": "97", "k": "בית · לבן-כחול", "c": "h"}, {"i": "96", "k": "חוץ · סגול", "c": "a"}]}, {"n": "נאפולי", "l": "94", "k": [{"i": "93", "k": "בית · תכלת", "c": "h"}, {"i": "92", "k": "חוץ · לבן", "c": "a"}, {"i": "91", "k": "שלישית · אדום", "c": "t"}]}, {"n": "רומא", "l": "90", "k": [{"i": "89", "k": "בית · אדום", "c": "h"}, {"i": "88", "k": "חוץ · קרם", "c": "a"}, {"i": "87", "k": "שלישית · אפור", "c": "t"}]}, {"n": "יובנטוס", "l": "103", "k": [{"i": "104", "k": "בית · שחור-לבן", "c": "h"}, {"i": "105", "k": "חוץ · ורוד", "c": "a"}]}, {"n": "ניוקאסל", "l": "nwl", "k": [{"i": "nw1", "k": "בית · שחור-לבן פסים", "c": "h"}, {"i": "nw2", "k": "חוץ · כחול נייבי", "c": "a"}, {"i": "nw3", "k": "שלישית · סגול בהיר", "c": "t"}]}, {"n": "אתלטיק בילבאו", "l": "abl", "k": [{"i": "ab1", "k": "בית · אדום-לבן פסים", "c": "h"}, {"i": "ab2", "k": "חוץ · שחור", "c": "a"}, {"i": "ab3", "k": "שלישית · תכלת", "c": "t"}]}, {"n": "ברזיל", "g": "n", "l": "107", "k": [{"i": "109", "k": "בית · צהוב", "c": "h"}, {"i": "108", "k": "חוץ · כחול כהה", "c": "a"}, {"i": "rt_bra04", "k": "בית · צהוב 2004", "c": "h", "r": 1}, {"i": "rt_bra02", "k": "בית · צהוב 2002", "c": "h", "r": 1}]}, {"n": "ארגנטינה", "g": "n", "l": "110", "k": [{"i": "111", "k": "בית · לבן-תכלת", "c": "h"}, {"i": "113", "k": "בית · תכלת מספר 10", "c": "h"}, {"i": "112", "k": "חוץ · שחור-כחול", "c": "a"}, {"i": "rt_arg06", "k": "בית · לבן-תכלת 2006", "c": "h", "r": 1}, {"i": "rt_arg06a", "k": "חוץ · כחול נייבי 2006", "c": "a", "r": 1}]}, {"n": "ספרד", "g": "n", "l": "114", "k": [{"i": "115", "k": "בית · אדום", "c": "h"}, {"i": "116", "k": "חוץ · לבן קרם", "c": "a"}]}, {"n": "הולנד", "g": "n", "l": "117", "k": [{"i": "119", "k": "בית · כתום", "c": "h"}, {"i": "118", "k": "חוץ · לבן", "c": "a"}, {"i": "rt_ned88", "k": "בית · כתום 1988", "c": "h", "r": 1}]}, {"n": "סנגל", "g": "n", "l": "120", "k": [{"i": "121", "k": "בית · לבן", "c": "h"}, {"i": "122", "k": "חוץ · ירוק כהה", "c": "a"}]}, {"n": "צרפת", "g": "n", "l": "123", "k": [{"i": "125", "k": "בית · כחול", "c": "h"}, {"i": "124", "k": "חוץ · תכלת בהיר", "c": "a"}, {"i": "rt_fra06", "k": "חוץ · לבן 2006", "c": "a", "r": 1}]}, {"n": "אנגליה", "g": "n", "l": "126", "k": [{"i": "128", "k": "בית · לבן", "c": "h"}, {"i": "127", "k": "חוץ · אדום", "c": "a"}, {"i": "rt_eng04", "k": "בית · לבן 2004", "c": "h", "r": 1}]}, {"n": "פורטוגל", "g": "n", "l": "129", "k": [{"i": "131", "k": "בית · אדום", "c": "h"}, {"i": "130", "k": "חוץ · לבן-תכלת", "c": "a"}, {"i": "rt_por14", "k": "בית · אדום פסים 2014", "c": "h", "r": 1}]}, {"n": "גרמניה", "g": "n", "l": "132", "k": [{"i": "133", "k": "בית · לבן", "c": "h"}, {"i": "134", "k": "חוץ · כחול כהה", "c": "a"}]}, {"n": "ישראל", "g": "n", "l": "135", "k": [{"i": "140", "k": "בית · תכלת", "c": "h"}, {"i": "138", "k": "בית · כחול", "c": "h"}, {"i": "141", "k": "חוץ · לבן", "c": "a"}, {"i": "139", "k": "חוץ · לבן-תכלת", "c": "a"}, {"i": "136", "k": "שלישית · לבן מיוחדת", "c": "t"}, {"i": "137", "k": "שלישית · ורוד מיוחדת", "c": "t"}]}, {"n": "הנמכרות ביותר", "g": "b", "l": "b1", "k": [{"i": "b1", "k": "לבן-תכלת", "t": "ארגנטינה", "c": "h"}, {"i": "b2", "k": "ירוק", "t": "מכבי חיפה", "c": "h"}, {"i": "b3", "k": "ורוד", "t": "פריז סן ז'רמן", "c": "t"}, {"i": "b4", "k": "כחול-אדום", "t": "פריז סן ז'רמן", "c": "h"}, {"i": "b5", "k": "שחור-סגול", "t": "ברצלונה", "c": "a", "s": "26/27"}, {"i": "b6", "k": "ירוק כהה", "t": "ריאל מדריד", "c": "a"}, {"i": "b7", "k": "תכלת-לבן", "t": "ארגנטינה", "c": "h"}, {"i": "b8", "k": "מנטה", "t": "פורטוגל", "c": "a"}, {"i": "b9", "k": "לבן", "t": "ריאל מדריד", "c": "h", "s": "26/27"}, {"i": "b10", "k": "כחול כהה", "t": "פריז סן ז'רמן", "c": "h"}, {"i": "b11", "k": "אדום", "t": "באיירן מינכן", "c": "h"}, {"i": "b13", "k": "בורדו-שחור", "t": "ליברפול", "c": "t"}, {"i": "b14", "k": "שחור-לבן", "t": "יובנטוס", "c": "h"}, {"i": "b15", "k": "בז'", "t": "מנצ'סטר יונייטד", "c": "t"}]}, {"n": "סנטוס", "l": "sanl", "k": [{"i": "rt_san", "k": "שלישית · תכלת 2012", "c": "t", "r": 1}]}],BSI=36;
+function $(i){return document.getElementById(i)}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function nrm(s){return String(s).replace(/["'״׳\-\s\/]/g,"").toLowerCase()}
+function ld(k,d){try{var v=JSON.parse(localStorage.getItem(k));return v==null?d:v}catch(e){return d}}
+function sv(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}
+function key(a,b){return a+":"+b}
+function unk(k){var a=k.split(":");return[+a[0],+a[1]]}
+function okk(a){return T[a[0]]&&T[a[0]].k[a[1]]}
+var CATS=[["h","בית"],["a","חוץ"],["t","שלישית"]],CN={h:"בית",a:"חוץ",t:"שלישית"};
+var LGS=["ליגת העל","ספרד","אנגליה","איטליה","גרמניה","צרפת","נבחרות"];
+var LGM={"ליגת העל":["מכבי חיפה","מכבי תל אביב","הפועל תל אביב",'בית"ר ירושלים',"הפועל באר שבע","הפועל פתח תקווה"],"ספרד":["ריאל מדריד","ברצלונה","אתלטיקו מדריד","אתלטיק בילבאו"],"אנגליה":["ניוקאסל","ליברפול","מנצ'סטר יונייטד","מנצ'סטר סיטי","ארסנל","טוטנהאם","צ'לסי"],"איטליה":["קומו","מילאן","אינטר","נאפולי","רומא","יובנטוס"],"גרמניה":["באיירן מינכן","דורטמונד"],"צרפת":["פריז סן ז'רמן"]};
+function lgof(t){if(t.g=="n")return"נבחרות";for(var k in LGM)if(LGM[k].indexOf(t.n)>-1)return k;return""}
+var CLR=[["אדום","#E5262B"],["כחול","#1F4FD8"],["תכלת","#6CC3F0"],["לבן","#F5F5F5"],["שחור","#111111"],["צהוב","#FFD60A"],["ירוק","#14A44D"],["כתום","#FF7A1A"],["ורוד","#FF7EB6"],["סגול","#7A3FD1"],["אפור","#8A8F9C"],["בורדו","#7B1230"],["זהב","#C9A227"]];
+function colors(l){var r=[];CLR.forEach(function(c){if(l.indexOf(c[0])>-1)r.push(c[0])});return r}
+function pk(l){var s="",m=l.match(/\s(\d\d\/\d\d|\d{4})$/);if(m){s=m[1];l=l.slice(0,m.index)}return{t:l.replace(/^(בית|חוץ|שלישית) · /,""),s:s}}
+function prod(ti,ki){var t=T[ti],k=t.k[ki],b=t.g=="b",p=b?{t:k.k,s:k.s||""}:pk(k.k);return{ti:ti,ki:ki,img:k.i,title:p.t,team:b?k.t:t.n,season:p.s,cat:k.c||"",label:(b?k.t:t.n)+" · "+k.k,col:colors(k.k),lg:b?"":lgof(t),best:b}}
+var ALL=[];T.forEach(function(t,ti){if(t.g!="b")t.k.forEach(function(k,ki){ALL.push([ti,ki])})});
+var BEST=T[BSI].k.map(function(k,ki){return[BSI,ki]});
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1)),t=a[i];a[i]=a[j];a[j]=t}return a}
+function pills(box,list,cur,on){box.innerHTML="";list.forEach(function(x){var b=document.createElement("button");b.className="pill";b.type="button";b.textContent=x[1];b.setAttribute("aria-pressed",x[0]===cur);b.onclick=function(){[].forEach.call(box.children,function(e){e.setAttribute("aria-pressed",e===b)});on(x[0])};box.appendChild(b)})}
+var cart=ld("dr_cart",[]).filter(function(c){return c&&IMG[c.i]&&okk([c.ti,c.ki])}),fav=ld("dr_fav",[]),rec=ld("dr_rec",[]),champs=ld("dr_champs",[]);
+function saveCart(){sv("dr_cart",cart)}
+var tT;function toast(m){var e=$("ts");e.textContent=m;e.hidden=false;clearTimeout(tT);tT=setTimeout(function(){e.hidden=true},2600)}
+function isFav(a,b){return fav.indexOf(key(a,b))>-1}
+function togFav(a,b){var k=key(a,b),i=fav.indexOf(k);if(i>-1)fav.splice(i,1);else fav.push(k);sv("dr_fav",fav)}
+
+var cmp=[],curV="home";
+function shareShirt(ti,ki){var p=prod(ti,ki);window.open("https://wa.me/?text="+encodeURIComponent("תראו את החולצה הזאת: "+p.label+"\n"+BASE+"#shirt-"+ti+"-"+ki),"_blank","noopener")}
+function go(h){go2(h)}
+function go2(h){if(h=="how"){$("mo").showModal();return}if(VIEWS.indexOf(h)>-1){if(location.hash=="#"+h)route();else location.hash=h}}
+function svd(){}
+function el(tag,cls,html){var e=document.createElement(tag);if(cls)e.className=cls;if(html!=null)e.innerHTML=html;return e}
+/* sheet */
+var sdlg=$("sh"),SZA=["S","M","L","XL","2XL"],SZK=[4,6,8,10,12,14,16],pickSize=null;
+function etaTxt(){var f=function(d){var x=new Date(Date.now()+d*864e5);try{return x.toLocaleDateString("he-IL",{day:"numeric",month:"long"})}catch(e){return""}};return"אם תזמינו היום: משלוח משוער בין "+f(17)+" ל-"+f(21)}
+function openSheet(ti,ki){var p=prod(ti,ki),kid=false,size="",named=false,k=key(ti,ki),bs=bp(ti,ki),lng=false,ptc="",po=patchOpts(ti,ki);function cur(){return bs+(lng?LSP:0)+(named?NMP:0)+(ptc?PTP:0)}function rp(){var v=cur();$("spr").textContent=v+"₪";var a=$("addb");if(a)a.textContent="הוסף לסל · "+v+" ₪"}
+rec=[k].concat(rec.filter(function(x){return x!=k})).slice(0,16);sv("dr_rec",rec);
+var sim=[];T[ti].k.forEach(function(z,i){if(i!=ki&&T[ti].g!="b")sim.push(i)});sim=sim.slice(0,8);
+$("shc").innerHTML='<div class="dp"><div class="pf"><img src="'+IMG[p.img]+'" alt="'+esc(p.team+" "+p.title)+'"></div><div class="s1"><h3>'+esc(p.title)+'</h3><span class="pri" id="spr">'+bs+'₪</span></div><div style="margin:8px 0"><span class="tag">'+esc(p.team)+'</span>'+(p.season?'<span class="tag r">עונה '+p.season+'</span>':"")+(p.cat?'<span class="tag">'+CN[p.cat]+'</span>':"")+'</div>'+
+'<div class="lab"><span>מידה</span><button type="button" id="szf">לא בטוחים? מצאו מידה</button></div><div class="seg"><button type="button" id="sa" aria-pressed="true">מבוגרים</button><button type="button" id="sk" aria-pressed="false">ילדים</button></div><div class="szs" id="szs"></div>'+
+'<label class="chk"><input type="checkbox" id="lsv"> שרוול ארוך (+'+LSP+' ₪)</label><label class="chk"><input type="checkbox" id="pc"> שם ומספר על החולצה (+'+NMP+' ₪)</label><div class="pnb" id="pnb" hidden><div class="f"><input type="text" id="pnm" maxlength="14" placeholder="שם" aria-label="שם"><input type="text" id="pno" maxlength="2" inputmode="numeric" placeholder="מספר" aria-label="מספר"></div><div class="bk" aria-hidden="true"><small id="bn2">&nbsp;</small><b id="bnum">10</b></div></div>'+
+(po.length?'<div class="lab" style="margin-top:14px"><span>פאץ\'</span><small>'+(PTP?"+"+PTP+" ₪":"המחיר יאושר בוואטסאפ")+'</small></div><select id="ptc" class="ptc"><option value="">ללא פאץ\'</option>'+po.map(function(z){return"<option>"+esc(z)+"</option>"}).join("")+"</select>":"")+'<div class="eta">'+etaTxt()+'</div><button class="btn rd full" id="addb" type="button" style="margin-top:16px">הוסף לסל · '+bs+' ₪</button>'+
+'<div class="shr"><button class="btn ol" id="shf" type="button"><span id="shfh">♡</span> שמרו</button><button class="btn ol" id="shw" type="button">שלחו לחבר</button></div>'+(sim.length?'<div class="lab" style="margin-top:22px"><span>עוד מ'+esc(p.team)+'</span></div><div class="row" id="sim" style="margin-inline:-18px;padding-inline:18px"></div>':"")+'</div>';
+if(sim.length){sim.forEach(function(i){var c=pcard(ti,i,{nocmp:1});c.onclick=function(){openSheet(ti,i)};$("sim").appendChild(c)})}
+function drawSz(){var b=$("szs");b.innerHTML="";b.classList.remove("bad");(kid?SZK:SZA).forEach(function(s){var v=kid?"ילדים "+s:String(s),x=document.createElement("button");x.type="button";x.textContent=s;x.setAttribute("aria-pressed",size==v);x.onclick=function(){size=v;drawSz()};b.appendChild(x)})}
+drawSz();pickSize=function(s){kid=/^ילדים/.test(s);size=s;$("sa").setAttribute("aria-pressed",!kid);$("sk").setAttribute("aria-pressed",kid);drawSz()};
+$("sa").onclick=function(){kid=false;size="";$("sa").setAttribute("aria-pressed","true");$("sk").setAttribute("aria-pressed","false");drawSz()};
+$("sk").onclick=function(){kid=true;size="";$("sk").setAttribute("aria-pressed","true");$("sa").setAttribute("aria-pressed","false");drawSz()};
+$("szf").onclick=function(){openFinder(function(s){pickSize(s)})};
+$("pc").onchange=function(){named=this.checked;$("pnb").hidden=!named;if(named)$("pnm").focus();rp()};$("lsv").onchange=function(){lng=this.checked;rp()};if($("ptc"))$("ptc").onchange=function(){ptc=this.value;rp()};
+$("pno").oninput=function(){this.value=this.value.replace(/\D/g,"");$("bnum").textContent=this.value||"10"};
+$("pnm").oninput=function(){$("bn2").textContent=this.value||" "};
+function fu(){$("shfh").textContent=isFav(ti,ki)?"♥":"♡"}fu();$("shf").onclick=function(){togFav(ti,ki);fu();if(curV=="saved")svd()};
+$("shw").onclick=function(){shareShirt(ti,ki)};
+var ab=$("addb");ab.onclick=function(){if(!size){$("szs").classList.add("bad");ab.textContent="בחרו מידה קודם";$("szs").scrollIntoView({block:"center"});setTimeout(function(){rp()},1500);return}
+var pn="";if(named){pn=($("pnm").value.trim()+" "+$("pno").value.trim()).trim();if(!pn){ab.textContent="כתבו שם או מספר";setTimeout(function(){rp()},1500);return}}
+cart.push({n:p.label,p:cur(),b:bs,x:cur()-bs,s:size,pn:pn,lg:lng?1:0,pt:ptc,i:p.img,ti:ti,ki:ki});saveCart();upd();sdlg.close();var m=cart.length%4,l=3-m;toast(m==0?"נוסף! הנחת 3+1 הופעלה":m==3?"נוסף! החולצה הבאה ב-40 ₪ בלבד":"נוסף. עוד "+l+(l==1?" חולצה":" חולצות")+" והרביעית ב-40 ₪")};
+sdlg.showModal();sdlg.scrollTop=0}
+$("shx").onclick=function(){sdlg.close()};sdlg.addEventListener("click",function(e){if(e.target===sdlg)sdlg.close()});
+sdlg.addEventListener("close",function(){if(/^#shirt-/.test(location.hash)){try{history.replaceState(null,"","#"+(curV=="order"?"front":curV))}catch(e){}}});
+
+/* size finder */
+var fdlg=$("fd"),fkid=false,fcb=null,fsize="";
+function openFinder(cb){fcb=cb||null;$("fres").innerHTML="";$("fuse").hidden=true;fdlg.showModal()}
+function calc(){var h=+$("fh").value,w=+$("fw").value,out="",s="";if(!h||(!fkid&&!w)){$("fres").innerHTML="";$("fuse").hidden=true;return}
+if(!fkid){var H=[[170,"S"],[175,"M"],[180,"L"],[185,"XL"],[999,"2XL"]],W=[[65,"S"],[70,"M"],[75,"L"],[80,"XL"],[999,"2XL"]],o=["S","M","L","XL","2XL"],pick=function(t,v){for(var i=0;i<t.length;i++)if(v<=t[i][0])return t[i][1];return"2XL"};s=o[Math.max(o.indexOf(pick(H,h)),o.indexOf(pick(W,w)))];out=s;if(h>190||w>87)out="2XL"+'<div style="font-family:var(--f);font-size:16px;font-weight:600;margin-top:6px;color:var(--ink)">מעל הטבלה שלנו. כתבו לנו ונבדוק.</div>'}
+else{var K=[[105,4],[115,6],[125,8],[135,10],[145,12],[155,14],[999,16]];for(var i=0;i<K.length;i++)if(h<=K[i][0]){s="ילדים "+K[i][1];out=s;break}}
+fsize=s;$("fres").innerHTML='<div class="bigs">'+out+'</div>';$("fuse").hidden=!fcb;$("fuse").textContent="בחרו "+s}
+["fh","fw"].forEach(function(i){$(i).oninput=calc});
+$("fa1").onclick=function(){fkid=false;$("fa1").setAttribute("aria-pressed","true");$("fk1").setAttribute("aria-pressed","false");$("fwl").hidden=false;calc()};
+$("fk1").onclick=function(){fkid=true;$("fk1").setAttribute("aria-pressed","true");$("fa1").setAttribute("aria-pressed","false");$("fwl").hidden=true;calc()};
+$("fuse").onclick=function(){if(fcb&&fsize)fcb(fsize);fdlg.close()};
+$("fdx").onclick=function(){fdlg.close()};fdlg.addEventListener("click",function(e){if(e.target===fdlg)fdlg.close()});
+
+/* cart */
+var F=["fn","fa","fcy","fr","fo","fz","fp"],LBL={fn:"שם",fa:"כתובת",fcy:"עיר",fr:"מדינה/מחוז",fo:"מדינה",fz:"מיקוד",fp:"טלפון"},cdlg=$("cd");
+function tot(){var n=cart.length,b=cart.map(function(c){return c.b!=null?c.b:c.p}).sort(function(a,z){return z-a}),d=0,t=0;cart.forEach(function(c){t+=c.p});for(var i=3;i<n;i+=4)d+=Math.max(0,b[i]-40);return{n:n,d:d,t:t-d}}
+function szSel(c,i){var s=document.createElement("select");s.setAttribute("aria-label","מידה");s.innerHTML='<optgroup label="מבוגרים">'+SZA.map(function(x){return"<option"+(c.s==x?" selected":"")+">"+x+"</option>"}).join("")+'</optgroup><optgroup label="ילדים">'+SZK.map(function(x){return'<option value="ילדים '+x+'"'+(c.s=="ילדים "+x?" selected":"")+">"+x+"</option>"}).join("")+"</optgroup>";s.onchange=function(){cart[i].s=s.value;saveCart();wa()};return s}
+function upd(){var c0=tot(),it=$("items");$("cn").textContent=c0.n;$("cn").hidden=!c0.n;$("fb").classList.toggle("on",!!c0.n);$("fbn").textContent=c0.n+(c0.n==1?" חולצה":" חולצות");$("fbt").textContent=c0.t+" ₪";
+it.innerHTML=c0.n?"":'<div class="empty"><b>הסל ריק</b>בחרו חולצה בחנות.</div>';
+cart.forEach(function(c,i){var r=document.createElement("div");r.className="it";r.innerHTML='<img src="'+IMG[c.i]+'" alt=""><div><span class="n">'+esc(c.n)+"</span>"+(c.pn?"<small>שם ומספר: "+esc(c.pn)+"</small>":"")+(c.lg?"<small>שרוול ארוך</small>":"")+(c.pt?"<small>"+esc(c.pt)+"</small>":"")+'</div><div class="ac"><span>'+c.p+' ₪</span><button class="dp1" type="button">שכפול</button><button class="rm" type="button">הסר</button></div>';r.children[1].appendChild(szSel(c,i));r.querySelector(".rm").onclick=function(){cart.splice(i,1);saveCart();upd()};r.querySelector(".dp1").onclick=function(){cart.splice(i+1,0,JSON.parse(JSON.stringify(c)));saveCart();upd()};it.appendChild(r)});
+var m=c0.n%4,left=m==3?0:3-m,pg="";for(var z=0;z<4;z++)pg+='<i class="'+(c0.n&&(m==0||z<m)?(z==3?"fr":"on"):"")+'"></i>';$("pgb").innerHTML=c0.n?pg:"";
+$("hint").textContent=!c0.n?"":(m==0?"הנחת 3+1 הופעלה! עוד 3 חולצות להנחה נוספת":(m==3?"החולצה הבאה ב-40 ₪ בלבד!":"הוסיפו עוד "+left+(left==1?" חולצה":" חולצות")+" והרביעית ב-40 ₪"));
+$("disc").hidden=!c0.d;$("disc").textContent="הנחת מבצע 3+1: -"+c0.d+" ₪";$("sum").textContent=c0.t+" ₪";$("eta").textContent=etaTxt();$("go").disabled=!c0.n;if(!c0.n)step(1);wa()}
+function step(n){$("cs").hidden=n!=1;$("fm").hidden=n!=2}
+function openCart(){upd();step(1);cdlg.showModal();cdlg.scrollTop=0}
+$("fb").onclick=openCart;$("fb").onkeydown=function(e){if(e.key=="Enter")openCart()};
+$("cdx").onclick=function(){cdlg.close()};$("more").onclick=function(){cdlg.close()};cdlg.addEventListener("click",function(e){if(e.target===cdlg)cdlg.close()});
+$("go").onclick=function(){if(cart.length){step(2);wa();cdlg.scrollTop=0}};$("bk").onclick=function(){step(1)};
+$("gc").onchange=function(){$("gl").hidden=!this.checked;wa()};$("gt").oninput=wa;$("on").oninput=wa;
+var shipd=ld("dr_ship",{});F.forEach(function(f){if(shipd[f])$(f).value=shipd[f];$(f).oninput=function(){this.classList.remove("bad");shipd[f]=this.value;sv("dr_ship",shipd);wa()}});
+function wa(){var c0=tot(),n=c0.n,gift=$("gc").checked,ids=cart.map(function(c){return c.ti+"k"+c.ki}).join("-");var m="הי באתי בקשר לחולצות, אני רוצה להזמין "+n+(n==1?" חולצה":" חולצות")+":\n"+cart.map(function(c,i){return(i+1)+". "+c.n+(c.s?", במידה "+c.s:"")+(c.pn?", עם שם ומספר: "+c.pn:"")+(c.lg?", שרוול ארוך":"")+(c.pt?", "+c.pt:"")+" ("+c.p+" ₪)"}).join("\n")+(c0.d?"\nהנחת מבצע 3+1: -"+c0.d+" ₪":"")+"\nסה\"כ: "+c0.t+" ₪"+(gift?"\n\nזו מתנה"+($("gt").value.trim()?". ברכה: "+$("gt").value.trim():""):"")+($("on").value.trim()?"\nהערה: "+$("on").value.trim():"")+"\n\nפרטי משלוח:\n"+F.map(function(f){return LBL[f]+": "+$(f).value.trim()}).join("\n")+"\n\nתמונות החולצות: "+BASE+"#order-"+ids;$("send").href=n?"https://wa.me/"+PHONE+"?text="+encodeURIComponent(m):"#";
+$("scw").href="https://wa.me/?text="+encodeURIComponent("מה דעתך על הסל שלי?\n"+cart.map(function(c){return"• "+c.n}).join("\n")+"\n"+BASE+"#order-"+ids)}
+$("send").onclick=function(e){var bad=null;F.forEach(function(f){var el=$(f),ok=el.value.trim()!=="";el.classList.toggle("bad",!ok);if(!ok&&!bad)bad=el});if(!cart.length||bad){e.preventDefault();if(bad)bad.focus()}};
+
+/* more / info / theme / reviews */
+function dz(h){$("dzc").innerHTML=h;$("dz").showModal();$("dz").scrollTop=0}
+$("dzx").onclick=function(){$("dz").close()};$("dz").addEventListener("click",function(e){if(e.target===$("dz"))$("dz").close()});
+$("mox").onclick=function(){$("mo").close()};$("mo").addEventListener("click",function(e){if(e.target===$("mo"))$("mo").close()});
+$("msz").onclick=function(){$("mo").close();var d=document.createElement("div");d.appendChild($("t-sz").content.cloneNode(true));dz(d.innerHTML)};
+$("mhw").onclick=function(){$("mo").close();go("how")};
+$("mad").onclick=function(){$("mo").close();dz('<h2 style="font-size:40px">הוספה למסך הבית</h2><p><b>באייפון (ספארי):</b> לוחצים על כפתור השיתוף (ריבוע עם חץ), ואז "הוסף למסך הבית".</p><p><b>באנדרואיד (כרום):</b> שלוש נקודות, ואז "הוסף למסך הבית".</p>')};
+$("mwa").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent("הי, יש לי שאלה על החולצות");
+function theme(t){document.documentElement.setAttribute("data-theme",t);sv("dr_th",t)}
+$("mth").onclick=function(){var cur=document.documentElement.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");theme(cur=="dark"?"light":"dark")};
+var th0=ld("dr_th",null);if(th0)document.documentElement.setAttribute("data-theme",th0);
+var RV=[],rate=0;
+$("mrv").onclick=function(){$("mo").close();RV=ld("yz12_rv",[]).slice().reverse();dz('<h2 style="font-size:40px">דירוג לקוחות</h2><div id="rs" style="margin-top:10px"></div><div id="rl"></div><div class="rf"><h3 style="font-size:26px">כתבו ביקורת</h3><div class="stars" id="stars" role="group" aria-label="דירוג"></div><label>שם<input type="text" id="rn" maxlength="30"></label><label>למה נתתם את הדירוג?<textarea id="rt" maxlength="400" rows="3"></textarea></label><label>תמונה (לא חובה)<input type="file" id="rp" accept="image/*"></label><button class="btn rd" id="rsend" type="button">פרסמו ביקורת</button><p class="mut" id="rnote" style="font-size:14px;margin:0">הביקורת תישמר במכשיר הזה.</p></div>');rvr();rate=0;var s=$("stars");for(var i=1;i<=5;i++)(function(i){var b=document.createElement("button");b.type="button";b.textContent="★";b.setAttribute("aria-label",i+" כוכבים");b.onclick=function(){rate=i;[].forEach.call(s.children,function(x,j){x.classList.toggle("on",j<i)})};s.appendChild(b)})(i);
+$("rsend").onclick=function(){var f=$("rp").files[0],txt=$("rt").value.trim();if(!rate||!txt){$("rnote").textContent="בחרו דירוג וכתבו למה.";return}var done=function(img){var r={n:$("rn").value.trim()||"לקוח",s:rate,t:txt,img:img},a=ld("yz12_rv",[]);a.push(r);sv("yz12_rv",a);RV.unshift(r);rvr();$("rnote").textContent="תודה! הביקורת נשמרה במכשיר הזה.";$("rt").value="";$("rn").value="";$("rp").value="";rate=0;[].forEach.call($("stars").children,function(x){x.classList.remove("on")})};f?shrink(f,done):done("")}};
+function rvr(){var l=$("rl");l.innerHTML=RV.length?"":'<p class="mut">עוד אין ביקורות. היו הראשונים!</p>';RV.forEach(function(r){var s=Math.max(0,Math.min(5,Math.round(+r.s||0))),d=document.createElement("div");d.className="rv";d.innerHTML="<b>"+esc(r.n||"לקוח")+'</b> <span class="stt">'+"★".repeat(s)+"☆".repeat(5-s)+"</span><p>"+esc(r.t||"")+"</p>"+(/^data:image\//.test(r.img||"")?'<img src="'+esc(r.img)+'" alt="">':"");l.appendChild(d)});$("rs").innerHTML=RV.length?'<div class="avg"><span class="stt">★</span> <b>'+(RV.reduce(function(a,r){return a+(+r.s||0)},0)/RV.length).toFixed(1)+"</b> מתוך 5 · "+RV.length+" ביקורות</div>":""}
+function shrink(f,cb){var r=new FileReader();r.onload=function(){var im=new Image();im.onload=function(){var s=Math.min(1,900/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=Math.round(im.width*s);c.height=Math.round(im.height*s);c.getContext("2d").drawImage(im,0,0,c.width,c.height);cb(c.toDataURL("image/jpeg",.75))};im.onerror=function(){cb("")};im.src=r.result};r.onerror=function(){cb("")};r.readAsDataURL(f)}
+
+
+
+/* ===== יציע ===== */
+var SZ=["S","M","L","XL","2XL"],HEART='<svg viewBox="0 0 24 24" stroke-linejoin="round"><path d="M12 20s-7-4.4-9-9a5 5 0 019-3 5 5 0 019 3c-2 4.6-9 9-9 9z"/></svg>';
+var PG={cats:[],lgs:[],teams:[],cols:[],ret:[],sort:"rec",one:false,show:24,page:1,q:""};
+function bp(ti,ki){return T[ti].k[ki].r?RP:PRICE}
+var LGP={"ליגת העל":"פאץ' ליגת העל","ספרד":"פאץ' לה ליגה","אנגליה":"פאץ' הפרמייר ליג","איטליה":"פאץ' סרייה A","גרמניה":"פאץ' הבונדסליגה","צרפת":"פאץ' ליגה 1"};
+function patchOpts(ti,ki){var t=T[ti],k=t.k[ki],sn=prod(ti,ki).season||"";if(t.g=="b"){var j=-1;T.forEach(function(x,i){if(x.n==k.t&&x.g!="b")j=i});if(j<0)return[];t=T[j]}
+if(t.g=="n"){var y=0;if(sn)y=sn.length==4?+sn:(+sn.slice(0,2)>60?1900:2000)+ +sn.slice(0,2);var WC="פאץ' המונדיאל",EU="פאץ' היורו";if(!y||(y%4!=0&&y%4!=2))return[WC,EU];if(y%4==2)return[WC];if(t.n=="ברזיל"||t.n=="ארגנטינה")return["פאץ' קופה אמריקה"];if(t.n=="סנגל")return["פאץ' גביע אפריקה"];return[EU]}
+if(t.n=="סנטוס")return["פאץ' קופה ליברטדורס"];var o=["פאץ' ליגת האלופות"],l=lgof(t);if(LGP[l])o.push(LGP[l]);return o}
+function seasonN(p){var s=p.season;if(!s)return 0;var n=s.length==4?+s.slice(2):+s.slice(0,2);return n>60?n-100:n}
+function pcard(ti,ki){var c=tile(ti,ki,{});c.classList.add("pc");return c}
+function flyTo(img){var t=$("hc");if(!img||!t||(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches))return;var r=img.getBoundingClientRect(),q=t.getBoundingClientRect(),f=document.createElement("img");f.src=img.src;f.className="flyc";f.style.cssText="left:"+r.left+"px;top:"+r.top+"px;width:"+r.width+"px;height:"+r.height+"px";document.body.appendChild(f);f.animate([{transform:"none",opacity:1},{transform:"translate("+(q.left+q.width/2-r.left-r.width/2)+"px,"+(q.top+q.height/2-r.top-r.height/2)+"px) scale(.05)",opacity:.5}],{duration:620,easing:"cubic-bezier(.5,0,.6,1)"}).onfinish=function(){f.remove();t.animate([{transform:"scale(1)"},{transform:"scale(1.25)"},{transform:"scale(1)"}],{duration:260})}}
+function quickAdd(ti,ki,s,img){var p=prod(ti,ki);flyTo(img);cart.push({n:p.label,p:bp(ti,ki),b:bp(ti,ki),x:0,s:s,pn:"",i:p.img,ti:ti,ki:ki});saveCart();upd();var m=cart.length%4,l=3-m;toast(m==0?"נוסף! הנחת 3+1 הופעלה":m==3?"נוסף! החולצה הבאה ב-40 ₪ בלבד":"נוסף. עוד "+l+(l==1?" חולצה":" חולצות")+" והרביעית ב-40 ₪");try{navigator.vibrate&&navigator.vibrate(20)}catch(e){}}
+var openT=null;
+function tile(ti,ki,o){var p=prod(ti,ki),c=el("div","tile");c.innerHTML='<div class="im"><img src="'+IMG[p.img]+'" alt="'+esc(p.team+" "+p.title)+'" loading="lazy">'+((o.badge||(T[ti].k[ki].r?"רטרו":""))?'<span class="bd">'+(o.badge||"רטרו")+"</span>":"")+'<button class="hh" type="button" aria-label="שמירה" aria-pressed="'+isFav(ti,ki)+'">'+HEART+'</button><div class="sz"><p>בחרו מידה</p><div></div></div></div><div class="mt2"><b>'+esc(p.team+" "+p.title)+'</b><small>'+(p.season?"עונת "+p.season:"")+'</small><span>'+bp(ti,ki)+' ₪</span></div><button class="qa" type="button">הוסף לסל</button>';
+var im=c.querySelector(".im"),img=c.querySelector("img"),sz=c.querySelector(".sz div");SZ.forEach(function(s){var b=el("button","",s);b.type="button";b.onclick=function(e){e.stopPropagation();quickAdd(ti,ki,s,img);c.classList.remove("open");openT=null};sz.appendChild(b)});
+im.onclick=function(e){if(e.target.closest(".hh,.sz"))return;if(c.classList.contains("open")){c.classList.remove("open");openT=null;return}openSheet(ti,ki)};
+c.querySelector(".qa").onclick=function(e){e.stopPropagation();if(openT&&openT!=c)openT.classList.remove("open");c.classList.toggle("open");openT=c.classList.contains("open")?c:null};
+var h=c.querySelector(".hh");h.onclick=function(e){e.stopPropagation();togFav(ti,ki);h.setAttribute("aria-pressed",isFav(ti,ki));favN()};
+c.querySelector(".mt2").onclick=function(){openSheet(ti,ki)};return c}
+document.addEventListener("click",function(e){if(openT&&!e.target.closest(".tile"))openT.classList.remove("open")});
+function favN(){}
+/* ---- filtering ---- */
+function match(x,skip){var t=T[x[0]],p=prod(x[0],x[1]);if(skip!="cats"&&PG.cats.length&&PG.cats.indexOf(p.cat)<0)return false;if(skip!="ret"&&PG.ret.length&&!T[x[0]].k[x[1]].r)return false;if(skip!="lgs"&&PG.lgs.length&&PG.lgs.indexOf(lgof(t))<0)return false;if(skip!="teams"&&PG.teams.length&&PG.teams.indexOf(x[0])<0)return false;if(skip!="cols"&&PG.cols.length&&!PG.cols.some(function(c){return p.col.indexOf(c)>-1}))return false;if(PG.q){var q=nrm(PG.q);if(nrm(p.team+" "+p.title+" "+p.season+" "+(CN[p.cat]||"")+(T[x[0]].k[x[1]].r?" רטרו":"")).indexOf(q)<0)return false}return true}
+function list(){var L=ALL.filter(function(x){return match(x)});if(PG.sort=="new")L.sort(function(a,b){return seasonN(prod(b[0],b[1]))-seasonN(prod(a[0],a[1]))||a[0]-b[0]});else if(PG.sort=="az")L.sort(function(a,b){return T[a[0]].n.localeCompare(T[b[0]].n,"he")||a[1]-b[1]});else L.sort(function(a,b){return a[0]-b[0]||a[1]-b[1]});return L}
+function nF(){return PG.ret.length+PG.cats.length+PG.lgs.length+PG.teams.length+PG.cols.length}
+function shop(){var L=list(),g=$("sgx");g.innerHTML="";g.classList.toggle("one",PG.one);var PER=36,NP=Math.max(1,Math.ceil(L.length/PER));if(PG.page>NP)PG.page=NP;L.slice((PG.page-1)*PER,PG.page*PER).forEach(function(x){g.appendChild(tile(x[0],x[1],{}))});pager(NP,L.length,PER);if(!L.length)g.innerHTML='<div class="empty"><b>לא נמצאו חולצות</b>נסו להסיר מסנן או לחפש משהו אחר.</div>';$("scn").textContent=L.length+" פריטים";$("tfn").textContent=nF()?" ("+nF()+")":"";
+var t="כל החולצות";if(PG.teams.length==1)t=T[PG.teams[0]].n;else if(PG.lgs.length==1&&!PG.teams.length)t=PG.lgs[0];else if(PG.cats.length==1&&!PG.lgs.length&&!PG.teams.length)t="חולצות "+CN[PG.cats[0]];if(PG.ret.length&&!PG.teams.length&&!PG.lgs.length&&!PG.cats.length)t="חולצות רטרו";$("sh1").textContent=PG.q?"תוצאות: "+PG.q:t;
+var ch=$("chips");ch.innerHTML="";function chip(txt,fn){var b=el("button","",esc(txt));b.type="button";b.onclick=function(){fn();PG.page=1;shop()};ch.appendChild(b)}
+PG.ret.forEach(function(c){chip("חולצות רטרו",function(){PG.ret=[]})});PG.cats.forEach(function(c){chip(CN[c],function(){PG.cats=PG.cats.filter(function(x){return x!=c})})});PG.lgs.forEach(function(c){chip(c,function(){PG.lgs=PG.lgs.filter(function(x){return x!=c})})});PG.teams.forEach(function(c){chip(T[c].n,function(){PG.teams=PG.teams.filter(function(x){return x!=c})})});PG.cols.forEach(function(c){chip(c,function(){PG.cols=PG.cols.filter(function(x){return x!=c})})});if(PG.q)chip("\""+PG.q+"\"",function(){PG.q=""});ch.hidden=!ch.children.length}
+function pager(np,n,per){var b=$("pgn");b.innerHTML="";b.hidden=np<2;$("rng").textContent=n?"מציג "+((PG.page-1)*per+1)+"-"+Math.min(n,PG.page*per)+" מתוך "+n+" תוצאות":"אין תוצאות";if(np<2)return;function add(t,p,on,dis){var e=el("button",on?"on":"",t);e.type="button";e.disabled=!!dis;e.onclick=function(){PG.page=p;shop();window.scrollTo(0,0)};b.appendChild(e)}add("‹",PG.page-1,0,PG.page<=1);var lo=Math.max(1,PG.page-2),hi=Math.min(np,lo+4);lo=Math.max(1,hi-4);for(var i=lo;i<=hi;i++)add(i,i,i==PG.page);add("›",PG.page+1,0,PG.page>=np)}$("tsr").onchange=function(){PG.sort=this.value;PG.page=1;shop()};$("tv").onclick=function(){PG.one=!PG.one;shop()};
+function reset(){PG.ret=[];PG.cats=[];PG.lgs=[];PG.teams=[];PG.cols=[];PG.q="";PG.page=1}
+function openShop(o){reset();if(o)for(var k in o)PG[k]=o[k];go2("shop");if(curV=="shop")shop()}
+/* ---- filter sheet ---- */
+function fsOpen(){fsDraw();$("ov").classList.add("on");$("fs").classList.add("on")}
+function fsClose(){$("ov").classList.remove("on");$("fs").classList.remove("on")}
+function fsCount(){return ALL.filter(function(x){return match(x)}).length}
+function fsDraw(){var open={};[].forEach.call($("fbd").querySelectorAll("details"),function(d){open[d.dataset.k]=d.open});var b=$("fbd");b.innerHTML="";
+function sec(k,title,opts,sel,fn,dflt){var d=el("details","","<summary>"+title+(sel.length?" ("+sel.length+")":"")+"</summary>");d.dataset.k=k;d.open=open[k]!==undefined?open[k]:!!dflt;var o=el("div","opts");opts.forEach(function(x){var l=el("label","",'<input type="checkbox">'+(x.img?'<img src="'+x.img+'" alt="">':"")+"<span>"+esc(x.t)+"</span><small>"+x.n+"</small>");var i=l.querySelector("input");i.checked=sel.indexOf(x.v)>-1;i.onchange=function(){fn(x.v,i.checked)};o.appendChild(l)});d.appendChild(o);b.appendChild(d)}
+function cnt(skip,f){return ALL.filter(function(x){return match(x,skip)&&f(x)}).length}
+sec("ret","סוג",[{v:"r",t:"חולצות רטרו",n:cnt("ret",function(x){return!!T[x[0]].k[x[1]].r})}],PG.ret,function(v,on){tg(PG.ret,v,on)},true);
+sec("cats","קטגוריה",CATS.map(function(c){return{v:c[0],t:c[1],n:cnt("cats",function(x){return prod(x[0],x[1]).cat==c[0]})}}),PG.cats,function(v,on){tg(PG.cats,v,on)},true);
+sec("lgs","ליגה",LGS.concat(["נבחרות"]).filter(function(v,i,a){return a.indexOf(v)==i}).map(function(l){return{v:l,t:l,n:cnt("lgs",function(x){return lgof(T[x[0]])==l})}}).filter(function(x){return x.n||PG.lgs.indexOf(x.v)>-1}),PG.lgs,function(v,on){tg(PG.lgs,v,on)});
+var tm=[];T.forEach(function(t,i){if(t.g=="b")return;var n=cnt("teams",function(x){return x[0]==i});if(n||PG.teams.indexOf(i)>-1)tm.push({v:i,t:t.n,img:IMG[t.l],n:n})});sec("teams","קבוצה",tm,PG.teams,function(v,on){tg(PG.teams,v,on)});
+var d=el("details","","<summary>צבע"+(PG.cols.length?" ("+PG.cols.length+")":"")+"</summary>");d.dataset.k="cols";d.open=!!open.cols;var sw=el("div","sw");CLR.forEach(function(c){var bt=el("button");bt.type="button";bt.style.background=c[1];bt.setAttribute("aria-label",c[0]);bt.setAttribute("aria-pressed",PG.cols.indexOf(c[0])>-1);bt.onclick=function(){tg(PG.cols,c[0],PG.cols.indexOf(c[0])<0)};sw.appendChild(bt)});d.appendChild(sw);b.appendChild(d);
+$("fok").textContent="הצג "+fsCount()+" חולצות"}
+function tg(a,v,on){var i=a.indexOf(v);if(on&&i<0)a.push(v);if(!on&&i>-1)a.splice(i,1);fsDraw()}
+$("tf").onclick=fsOpen;$("fx").onclick=fsClose;$("ov").onclick=function(){fsClose()};$("fok").onclick=function(){fsClose();PG.page=1;shop();window.scrollTo(0,0)};$("fclr").onclick=function(){reset();fsDraw()};
+/* ---- search ---- */
+function rsd(){return ld("dr_rs",[])}
+function sOpen(){$("sov").classList.add("on");$("sin").value="";sDraw();setTimeout(function(){$("sin").focus()},60)}
+function sClose(){$("sov").classList.remove("on");$("sin").blur()}
+function sDraw(){var q=$("sin").value.trim(),b=$("sbd");b.innerHTML="";if(!q){var r=rsd();if(r.length){b.appendChild(el("h3","","חיפושים אחרונים"));var w=el("div","rs");r.forEach(function(x){var bt=el("button","",esc(x));bt.type="button";bt.onclick=function(){$("sin").value=x;sDraw()};w.appendChild(bt)});b.appendChild(w)}b.appendChild(el("h3","","קבוצות פופולריות"));var tm=el("div","tm");[6,7,9,8,0,1,19,18].forEach(function(i){if(!T[i])return;var bt=el("button","",'<img src="'+IMG[T[i].l]+'" alt="">'+esc(T[i].n));bt.type="button";bt.onclick=function(){sClose();openShop({teams:[i]})};tm.appendChild(bt)});b.appendChild(tm);return}
+var nq=nrm(q),ts=[];T.forEach(function(t,i){if(t.g!="b"&&nrm(t.n).indexOf(nq)>-1)ts.push(i)});if(ts.length){b.appendChild(el("h3","","קבוצות"));var tm2=el("div","tm");ts.slice(0,10).forEach(function(i){var bt=el("button","",'<img src="'+IMG[T[i].l]+'" alt="">'+esc(T[i].n));bt.type="button";bt.onclick=function(){sClose();openShop({teams:[i]})};tm2.appendChild(bt)});b.appendChild(tm2)}
+var L=ALL.filter(function(x){var p=prod(x[0],x[1]);return nrm(p.team+" "+p.title+" "+p.season+" "+(CN[p.cat]||"")+(T[x[0]].k[x[1]].r?" רטרו":"")).indexOf(nq)>-1});b.appendChild(el("h3","",L.length+" תוצאות"));var g=el("div","pgrid");L.slice(0,30).forEach(function(x){g.appendChild(tile(x[0],x[1],{}))});b.appendChild(g);if(L.length>30){var m=el("button","more2","לכל התוצאות");m.type="button";m.onclick=function(){var v=$("sin").value.trim();var h=rsd().filter(function(z){return z!=v});h.unshift(v);sv("dr_rs",h.slice(0,6));sClose();openShop({q:v})};b.appendChild(m)}}
+$("hs").onclick=sOpen;$("sx").onclick=sClose;$("sin").oninput=sDraw;$("sin").onkeydown=function(e){if(e.key=="Enter"){var v=this.value.trim();if(v){var h=rsd().filter(function(z){return z!=v});h.unshift(v);sv("dr_rs",h.slice(0,6));sClose();openShop({q:v})}}};
+/* ---- home ---- */
+function carousel(id){var c=$(id),a=document.querySelector('.arw[data-for="'+id+'"]');if(!a)return;var bs=a.querySelectorAll("button");function go(d){c.scrollBy({left:d*(c.clientWidth*.8),behavior:"smooth"})}bs[0].onclick=function(){go(1)};bs[1].onclick=function(){go(-1)};function st(){var m=c.scrollWidth-c.clientWidth,x=Math.abs(c.scrollLeft);bs[1].style.opacity=x<m-4?1:.4;bs[0].style.opacity=x>4?1:.4}c.addEventListener("scroll",st,{passive:true});st()}
+function dots(id,did){var r=$(id),d=$(did);function draw(){d.innerHTML="";var n=Math.max(1,Math.round(r.scrollWidth/r.clientWidth));for(var i=0;i<n;i++){var e=document.createElement("i");e.dataset.i=i;d.appendChild(e)}up()}function up(){var n=d.children.length,m=r.scrollWidth-r.clientWidth,k=m>0?Math.round(Math.abs(r.scrollLeft)/m*(n-1)):0;[].forEach.call(d.children,function(e,i){e.className=i==k?"on":""})}r.addEventListener("scroll",up,{passive:true});draw();setTimeout(draw,600);d.onclick=function(e){var i=e.target.dataset&&e.target.dataset.i;if(i==null)return;var m=r.scrollWidth-r.clientWidth,n=d.children.length;r.scrollTo({left:-(m*(+i/(n-1||1))),behavior:"smooth"})}}
+var RET=ALL.filter(function(x){return!!T[x[0]].k[x[1]].r}),RB=RET.filter(function(x){var q=prod(x[0],x[1]);return q.team=="ברצלונה"&&q.season=="08/09"})[0]||RET[0],RH=[RB[0],RB[1],"קולקציית רטרו","עונה מדויקת על כל חולצה","חולצות רטרו",{ret:["r"]}];
+(function(){var hs=[[BSI,0,"קולקציית 26/27","הנבחרת שכולם מדברים עליה"],[BSI,3,"הנמכרות ביותר","החולצות שהלכו הכי טוב"],[BSI,6,"בית, חוץ ושלישית","כל הסטים של הקבוצה שלכם"],RH],st=$("yhst"),dt=$("yhd");hs.forEach(function(h,i){var p=prod(h[0],h[1]),d=el("div","hsl hc"+i,'<div class="tx"><small>'+h[2]+"</small><h1>"+esc(h[4]||p.team)+"</h1><p>"+h[3]+'</p><button type="button" class="hb2">לרכישה</button></div><img src="'+IMG[p.img]+'" alt="'+esc(p.team+" "+p.title)+'"'+(i?' loading="lazy"':"")+">");d.querySelector(".hb2").onclick=function(){h[5]?openShop(h[5]):openSheet(h[0],h[1])};st.appendChild(d);dt.appendChild(document.createElement("i"))});
+function up(){var w=st.clientWidth,k=Math.round(Math.abs(st.scrollLeft)/w);[].forEach.call(dt.children,function(e,i){e.className=i==k?"on":""})}st.addEventListener("scroll",up,{passive:true});up();var cur=0;if(!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)&&!document.documentElement.classList.contains("nm"))setInterval(function(){if(curV!="home"||document.querySelector("dialog[open]"))return;cur=(cur+1)%hs.length;st.scrollTo({left:-cur*st.clientWidth,behavior:"smooth"})},5200)})();
+(function(){var r=$("ytm");T.forEach(function(t,i){if(t.g=="b"||t.g=="n")return;var b=el("button","cc",'<span class="ci"><img src="'+IMG[t.l]+'" alt=""></span><small>'+esc(t.n)+"</small>");b.type="button";b.onclick=function(){openShop({teams:[i]})};r.appendChild(b)});carousel("ytm");
+var lg=$("ylg"),LL=["ליגת העל","ספרד","אנגליה","איטליה","גרמניה","צרפת","נבחרות"];LL.forEach(function(l){var ts=[];T.forEach(function(t,i){if(t.g!="b"&&lgof(t)==l&&ts.length<4)ts.push(t)});if(!ts.length)return;var b=el("button","cc",'<span class="ci mk">'+ts.map(function(t){return'<img src="'+IMG[t.l]+'" alt="">'}).join("")+"</span><small>"+(l=="נבחרות"?"נבחרות":"ליגת "+l.replace("ליגת ",""))+"</small>");b.type="button";b.onclick=function(){openShop({lgs:[l]})};lg.appendChild(b)});carousel("ylg")})();
+function prow(id,did,items,badge){var r=$(id);items.forEach(function(x){r.appendChild(tile(x[0],x[1],{badge:badge}))});dots(id,did)}
+prow("ybs","ybsd",T[BSI].k.slice(0,10).map(function(k,ki){return[BSI,ki]}),"3+1");
+var nw=ALL.filter(function(x){return seasonN(prod(x[0],x[1]))>=26}),nw2=nw.length>=8?shuffle(nw).slice(0,10):shuffle(ALL).slice(0,10);prow("ynw","ynwd",nw2,"חדש");
+prow("yrt","yrtd",shuffle(RET.slice()).slice(0,10),"רטרו");$("yra").onclick=function(){openShop({ret:["r"]})};$("yra").textContent="לכל חולצות הרטרו ("+RET.length+")";
+(function(){var c=$("ycat"),C=[["בית",{cats:["h"]},function(x){return T[x[0]].k[x[1]].c=="h"}],["חוץ",{cats:["a"]},function(x){return T[x[0]].k[x[1]].c=="a"}],["שלישית",{cats:["t"]},function(x){return T[x[0]].k[x[1]].c=="t"}],["נבחרות",{lgs:["נבחרות"]},function(x){return T[x[0]].g=="n"}],["חולצות רטרו",{ret:["r"]},function(x){return!!T[x[0]].k[x[1]].r}],["כל החולצות",{},function(){return true}]];C.forEach(function(k){var L=shuffle(ALL.filter(k[2]))[0],p=prod(L[0],L[1]),b=el("button","ct",'<img src="'+IMG[p.img]+'" alt="" loading="lazy"><span>'+k[0]+"</span>");b.type="button";b.onclick=function(){openShop(k[1])};c.appendChild(b)})})();
+(function(){var Q=[["באיזה אמצעי תשלום אפשר לשלם?","אחרי שליחת ההזמנה בוואטסאפ נשלח אליכם קישור לתשלום מאובטח."],["כמה זמן לוקח המשלוח?","זמן האספקה המשוער הוא כ-2.5 עד 3 שבועות מרגע אישור ההזמנה."],["איך עובד מבצע 3+1?","קונים שלוש חולצות, והרביעית עולה 40 ₪ בלבד. המבצע מחושב אוטומטית בסל."],["אפשר לבטל הזמנה?","לא. אין אפשרות לבטל הזמנה לאחר שליחתה, ולכן כדאי לבדוק מידה ופרטים לפני השליחה."],["איך בוחרים מידה?","בדף החולצה יש כלי למציאת מידה לפי גובה ומשקל, וטבלת מידות למבוגרים וילדים."]],f=$("yfq");Q.forEach(function(q){var d=el("details","","<summary>"+q[0]+"</summary><p>"+q[1]+"</p>");f.appendChild(d)})})();
+/* ---- saved ---- */
+function saved(){var g=$("vg2");g.innerHTML="";var L=fav.map(unk).filter(okk);L.forEach(function(a){g.appendChild(tile(a[0],a[1],{}))});$("ve2").hidden=!!L.length;$("vb2").hidden=!L.length;$("vcn").textContent=L.length+" פריטים";$("vw2").href="https://wa.me/?text="+encodeURIComponent("הרשימה שלי ב-יציע:\n"+L.map(function(a){return"• "+prod(a[0],a[1]).label+"\n"+BASE+"#shirt-"+a[0]+"-"+a[1]}).join("\n"));var r=$("vr2");r.innerHTML="";var R=rec.map(unk).filter(okk);R.slice(0,8).forEach(function(a){r.appendChild(tile(a[0],a[1],{}))});$("vrs2").hidden=!R.length}
+$("vc2").onclick=function(){fav=[];sv("dr_fav",fav);saved()};
+
+/* ---- floating, drawer, accessibility ---- */
+$("ywa").href="https://wa.me/"+PHONE+"?text="+encodeURIComponent("שלום, אשמח לעזרה בבחירת חולצה");
+var _u0=upd;upd=function(){_u0();var n=cart.length;$("ycn").textContent=n;$("ycn").style.display=n?"grid":"none"};
+$("ycart").onclick=openCart;
+function drOpen(){$("ov").classList.add("on");$("ydr").classList.add("on")}function drClose(){$("ydr").classList.remove("on");if(!$("fs").classList.contains("on"))$("ov").classList.remove("on")}
+$("hm").onclick=drOpen;$("ydx").onclick=drClose;var _ov=$("ov").onclick;$("ov").onclick=function(){fsClose();drClose()};
+(function(){var b=$("ydb");function item(t,fn,cls){var e=el("button",cls||"",esc(t));e.type="button";e.onclick=function(){drClose();fn()};b.appendChild(e)}
+item("כל החולצות",function(){openShop({})});item("בית",function(){openShop({cats:["h"]})});item("חוץ",function(){openShop({cats:["a"]})});item("שלישית",function(){openShop({cats:["t"]})});item("חולצות רטרו",function(){openShop({ret:["r"]})});item("שמרתי",function(){go2("saved")});
+LGS.concat(["נבחרות"]).filter(function(v,i,a){return a.indexOf(v)==i}).forEach(function(l){var d=el("details","","<summary>"+(l=="נבחרות"?"נבחרות":"ליגת "+l.replace("ליגת ",""))+"</summary>");var w=el("div","sub");var all=el("button","","כל "+l);all.type="button";all.onclick=function(){drClose();openShop({lgs:[l]})};w.appendChild(all);T.forEach(function(t,i){if(t.g!="b"&&lgof(t)==l){var x=el("button","",'<img src="'+IMG[t.l]+'" alt="">'+esc(t.n));x.type="button";x.onclick=function(){drClose();openShop({teams:[i]})};w.appendChild(x)}});d.appendChild(w);b.appendChild(d)});
+item("איך מזמינים",function(){$("mo").showModal()});item("צרו קשר בוואטסאפ",function(){window.open($("ywa").href,"_blank","noopener")})})();
+(function(){var A=ld("yz_a11y",{}),h=document.documentElement;function ap(){h.classList.toggle("hc",!!A.hc);h.classList.toggle("gs",!!A.gs);h.classList.toggle("ul",!!A.ul);h.classList.toggle("nm",!!A.nm);document.body.style.zoom=A.f?(1+A.f*.1):"";[].forEach.call($("ya").querySelectorAll("[data-a]"),function(b){var k=b.dataset.a;if(k=="hc"||k=="gs"||k=="ul"||k=="nm")b.setAttribute("aria-pressed",!!A[k])});sv("yz_a11y",A)}ap();
+$("yac").onclick=function(){$("ya").classList.toggle("on")};$("yax").onclick=function(){$("ya").classList.remove("on")};
+$("ya").addEventListener("click",function(e){var b=e.target.closest("[data-a]");if(!b)return;var k=b.dataset.a;if(k=="fp")A.f=Math.min(3,(A.f||0)+1);else if(k=="fm")A.f=Math.max(0,(A.f||0)-1);else if(k=="rs")A={};else A[k]=!A[k];ap()});
+$("yas").onclick=function(e){e.preventDefault();$("ya").classList.remove("on");$("mo").showModal()}})();
+/* ---- router ---- */
+var VIEWS=["home","shop","saved","order"];
+function showV(v){VIEWS.forEach(function(x){$("v-"+x).hidden=x!=v});curV=v;window.scrollTo(0,0)}
+function route(){var h=decodeURIComponent(location.hash.slice(1))||"home",m;fsClose();
+if(m=/^order-([0-9k-]+)$/.exec(h)){var g=$("og2");g.innerHTML="";m[1].split("-").forEach(function(c){var a=c.split("k");if(okk([+a[0],+a[1]]))g.appendChild(tile(+a[0],+a[1],{}))});showV("order");return}
+if(m=/^shirt-(\d+)-(\d+)$/.exec(h)){var a=+m[1],b=+m[2];if(okk([a,b])){if(curV=="order")showV("home");openSheet(a,b);return}}
+if(h=="shop"){showV("shop");$("tsr").value=PG.sort;shop();return}if(h=="saved"){showV("saved");saved();return}
+showV("home")}
+window.addEventListener("hashchange",route);
+$("hc").onclick=openCart;$("hv").onclick=function(){go2("saved")};
+(function(){var t=ld("bc_th",null);if(t)document.documentElement.setAttribute("data-theme",t)})();
+upd();route();
+</script>
+</body>
+</html>
